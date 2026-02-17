@@ -34,7 +34,13 @@ export default function Home() {
         throw new Error(data.error || "Failed to crawl");
       }
 
-      setSvgs(data.svgs || []);
+      const extractedSvgs = data.svgs || [];
+
+      if (extractedSvgs.length === 0) {
+        throw new Error("No SVGs found on this URL. Try another page.");
+      }
+
+      setSvgs(extractedSvgs);
 
       // Scroll to results
       setTimeout(() => {
