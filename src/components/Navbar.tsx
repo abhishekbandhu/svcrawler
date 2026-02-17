@@ -7,8 +7,8 @@ export function Navbar() {
     return (
         <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border/40">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-                    <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground">
+                <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
+                    <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground shadow-lg shadow-primary/20">
                         <svg
                             viewBox="0 0 24 24"
                             fill="none"
@@ -27,8 +27,9 @@ export function Navbar() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+                    <Link href="/convert" className="hover:text-primary transition-colors text-foreground font-semibold">Converter</Link>
                     <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
-                    <Link href="#features" className="hover:text-foreground transition-colors">Features</Link>
+                    <Link href="/#features" className="hover:text-foreground transition-colors">Features</Link>
                     <Link href="#how-it-works" className="hover:text-foreground transition-colors">How it Works</Link>
                     <Link href="#faq" className="hover:text-foreground transition-colors">FAQ</Link>
                 </nav>

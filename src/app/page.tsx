@@ -10,6 +10,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Features } from "@/components/Features";
 import { FAQ } from "@/components/FAQ";
+import { ConverterCTA } from "@/components/ConverterCTA";
 
 export default function Home() {
   const [svgs, setSvgs] = useState<ExtractedSvg[]>([]);
@@ -167,6 +168,8 @@ export default function Home() {
         )}
 
         <Features />
+
+        <ConverterCTA />
 
         <FAQ />
       </main>
