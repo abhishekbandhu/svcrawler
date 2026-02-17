@@ -1,0 +1,63 @@
+.voteSection {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.voteButtons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.voteBtn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-family: var(--font-outfit), sans-serif;
+}
+
+.voteBtn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.voteBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.voteOriginal:hover:not(:disabled) {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+}
+
+.voteRemake:hover:not(:disabled) {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.5);
+}
+
+.activeOriginal {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+}
+
+.activeRemake {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.5);
+}
