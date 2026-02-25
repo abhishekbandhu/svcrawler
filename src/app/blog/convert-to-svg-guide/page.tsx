@@ -45,11 +45,15 @@ export default function BlogPost() {
                             Converting any image to SVG means transforming it from pixels into a vector format. This is especially useful when you want crisp, lightweight graphics that look great on screens of all sizes.
                         </p>
 
-                        <h2>How to Convert to SVG</h2>
+                        <h2>How do you convert an image to SVG format?</h2>
+                        <p>
+                            To convert an image to SVG format, you must use a specialized tool that traces the raster pixels and plots them as resolution-independent vector paths. You upload your original PNG or JPG file into the generator, allow the tool to calculate the scalable paths, and then download the resulting vector file.
+                        </p>
+                        <p>Follow these exact steps to vectorize an asset:</p>
                         <ol>
-                            <li>Pick the image you want to convert (like JPG or PNG).</li>
-                            <li>Use an online converter tool that supports SVG export.</li>
-                            <li>Download the SVG file and edit it or add it to your project.</li>
+                            <li><strong>Pick the Asset:</strong> Select the raster image you want to convert (typically a JPG or PNG file).</li>
+                            <li><strong>Use a Converter:</strong> Upload the image into an online vectorizer tool that supports SVG export tracing.</li>
+                            <li><strong>Download and Import:</strong> Download the generated SVG file and add it to your project or open it in a graphics editor.</li>
                         </ol>
 
                         <p>

@@ -45,12 +45,15 @@ export default function BlogPost() {
                             When designers talk about “image to SVG,” they typically mean turning any kind of picture — like PNG, JPG, GIF, or photo — into a vector file that’s resolution-independent.
                         </p>
 
-                        <h2>Here’s the quick process:</h2>
+                        <h2>What is the process for image to SVG conversion?</h2>
+                        <p>
+                            The process for image to SVG conversion involves uploading a raster graphic, such as a PNG or JPG, into a vectorizer tool. The tool algorithmically traces the contrast boundaries and shapes to create scalable mathematical paths. Finally, you download the resulting SVG file to use on the web or edit in vector design software.
+                        </p>
                         <ul>
-                            <li>📌 Upload your image</li>
-                            <li>📌 Use a converter to vectorize shapes</li>
-                            <li>📌 Download the SVG</li>
-                            <li>📌 Open in a vector editor to tweak details</li>
+                            <li><strong>📌 Step 1:</strong> Upload your target raster image into the browser.</li>
+                            <li><strong>📌 Step 2:</strong> Use a conversion algorithm to vectorize the underlying shapes.</li>
+                            <li><strong>📌 Step 3:</strong> Download the newly generated SVG file.</li>
+                            <li><strong>📌 Step 4:</strong> Open the asset in a vector editor to tweak details if necessary.</li>
                         </ul>
 
                         <p>

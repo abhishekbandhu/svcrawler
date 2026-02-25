@@ -33,10 +33,10 @@ export function Features() {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4 text-foreground">
-                        Everything you need to manage SVGs
+                        Why do designers use the SVG Crawler tool?
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        Stop manually inspecting elements. Our tool automates the boring stuff so you can focus on designing.
+                        Designers use the SVG Crawler tool to automate the extraction and optimization of scalable vector graphics directly from websites. Our tool eliminates the need for manual DOM inspection by batch-downloading and organizing all inline SVGs, sprites, and linked files into a single ZIP archive instantly.
                     </p>
                 </div>
 

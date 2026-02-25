@@ -19,6 +19,29 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "SVG Crawler & Export Tool",
+              "url": "https://svgcrawler.com/",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "SVG Crawler",
+              "url": "https://svgcrawler.com/",
+              "logo": "https://svgcrawler.com/logo.png",
+            }),
+          }}
+        />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z49T4SRVZR"></script>
         <script
           dangerouslySetInnerHTML={{

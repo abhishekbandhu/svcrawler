@@ -6,24 +6,24 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
     {
-        question: "Is this tool free to use?",
+        question: "Is the SVG Crawler tool completely free to use online?",
         answer:
-            "Yes, SVG Crawler is completely free to use for both personal and commercial projects. There are no hidden fees or limits.",
+            "Yes, the SVG Crawler is completely free to use online. You can extract, optimize, and organize SVGs for both personal and commercial projects without any hidden fees, subscriptions, or strict usage limits.",
     },
     {
-        question: "How does the optimization work?",
+        question: "How does the SVG optimization process reduce file size?",
         answer:
-            "We use SVGO (SVG Optimizer), a standard NodeJS-based tool, to remove redundant information like metadata, hidden elements, and unused definitions from your SVG files.",
+            "Our tool uses SVGO under the hood. It reduces file size by removing redundant metadata, hidden elements, and unused definitions from your SVG files, ensuring maximum performance for your web projects.",
     },
     {
-        question: "Can I use the extracted icons commercially?",
+        question: "Can I use the extracted SVG icons commercially on my website?",
         answer:
-            "That depends on the license of the website you are crawling. We provide the tool to extract them, but you must ensure you have the right to use the assets.",
+            "Usage rights depend entirely on the license of the website you crawl. While our tool can extract public SVG code, you must independently verify that you have legal permission to use those graphic assets.",
     },
     {
-        question: "Does it work on websites behind valid login?",
+        question: "Can the SVG Crawler access websites behind a login or firewall?",
         answer:
-            "Currently, our crawler can only access public pages. It cannot crawl pages that require authentication or are behind a firewall.",
+            "No, the crawler can only access publicly available pages. It cannot bypass authentication walls, login screens, or firewalls to extract SVG assets.",
     },
 ];
 
@@ -32,6 +32,23 @@ export function FAQ() {
 
     return (
         <section id="faq" className="py-24 bg-background border-t border-border/40">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": faqs.map((faq) => ({
+                            "@type": "Question",
+                            "name": faq.question,
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": faq.answer
+                            }
+                        }))
+                    })
+                }}
+            />
             <div className="container mx-auto px-4 max-w-3xl">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">Frequently Asked Questions</h2>
