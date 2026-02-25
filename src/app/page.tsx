@@ -11,6 +11,7 @@ import { Footer } from "@/components/Footer";
 import { Features } from "@/components/Features";
 import { FAQ } from "@/components/FAQ";
 import { ConverterCTA } from "@/components/ConverterCTA";
+import { ImageToSvgCTA } from "@/components/ImageToSvgCTA";
 
 export default function Home() {
   const [svgs, setSvgs] = useState<ExtractedSvg[]>([]);
@@ -170,6 +171,8 @@ export default function Home() {
         <Features />
 
         <ConverterCTA />
+
+        <ImageToSvgCTA />
 
         <FAQ />
       </main>

@@ -26,8 +26,9 @@ export function Navbar() {
                     <span>SVG Crawler</span>
                 </Link>
 
-                <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
-                    <Link href="/convert" className="hover:text-primary transition-colors text-foreground font-semibold">Converter</Link>
+                <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+                    <Link href="/convert" className="hover:text-primary transition-colors text-foreground font-semibold">SVG to PNG</Link>
+                    <Link href="/image-to-svg" className="hover:text-primary transition-colors text-foreground font-semibold">Image to SVG</Link>
                     <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
                     <Link href="/#features" className="hover:text-foreground transition-colors">Features</Link>
                     <Link href="#how-it-works" className="hover:text-foreground transition-colors">How it Works</Link>
