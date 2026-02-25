@@ -5,6 +5,46 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
     {
+        slug: "svg-creator-guide",
+        title: "SVG Creator: Build Beautiful Scalable Graphics",
+        excerpt: "Discover how an SVG creator tool helps you generate scalable, editable content ready for websites and apps.",
+        date: "Feb 25, 2026",
+        author: "Admin",
+        image: "https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=2574&auto=format&fit=crop",
+    },
+    {
+        slug: "image-to-svg-workflow",
+        title: "Image to SVG: The Complete Conversion Workflow",
+        excerpt: "Learn the complete workflow for turning any picture into a resolution-independent vector file.",
+        date: "Feb 25, 2026",
+        author: "Admin",
+        image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop",
+    },
+    {
+        slug: "jpg-to-svg-conversion",
+        title: "JPG to SVG: How to Convert Raster Photos into Scalable Vectors",
+        excerpt: "Learn how to vectorize JPG images to create infinitely scalable SVG files.",
+        date: "Feb 25, 2026",
+        author: "Admin",
+        image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2671&auto=format&fit=crop",
+    },
+    {
+        slug: "convert-to-svg-guide",
+        title: "Convert to SVG: Ultimate Guide for Web Designers",
+        excerpt: "Learn why and how web designers convert images to SVG for crisp, lightweight graphics.",
+        date: "Feb 25, 2026",
+        author: "Admin",
+        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop",
+    },
+    {
+        slug: "svg-converter-guide",
+        title: "SVG Converter: What It Is & How to Use It",
+        excerpt: "Learn how an SVG converter transforms raster images into scalable, editable vector graphics.",
+        date: "Feb 25, 2026",
+        author: "Admin",
+        image: "https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop",
+    },
+    {
         slug: "top-10-svg-icons-2024",
         title: "Top 10 SVG Icon Sets for 2024",
         excerpt: "Discover the best SVG icon libraries that will speed up your workflow and make your designs pop.",
