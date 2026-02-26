@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = {
-    title: "JPG to SVG: How to Convert Raster Photos into Scalable Vectors",
-    description: "Learn how to vectorize JPG images to create infinitely scalable SVG files.",
+    title: "JPG to SVG Converter – Turn Images into Vector Files",
+    description: "Convert JPG to SVG online. Create scalable vector graphics for logos, icons, and web design using SVG Crawler.",
 };
 
 export default function BlogPost() {
@@ -68,6 +68,10 @@ export default function BlogPost() {
 
                         <p>
                             Whether you’re a graphic designer or a web developer, converting JPGs to SVG can take your visuals to the next level.
+                        </p>
+
+                        <p className="mt-8 italic text-muted-foreground border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg">
+                            For a complete guide, read our <Link href="/blog/extract-svg-from-website-guide" className="text-primary hover:underline font-medium">complete SVG extraction guide</Link>.
                         </p>
 
                         <div className="mt-12 p-8 bg-primary/5 rounded-2xl border border-primary/20 flex flex-col items-center text-center">

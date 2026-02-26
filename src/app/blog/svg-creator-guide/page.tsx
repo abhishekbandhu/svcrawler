@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = {
-    title: "SVG Creator: Build Beautiful Scalable Graphics",
-    description: "Discover how an SVG creator tool helps you generate scalable, editable content ready for websites and apps.",
+    title: "SVG Creator Online – Create & Export SVG Files",
+    description: "Create, extract, and export SVG files easily. Use SVG Crawler to build scalable graphics for web and design.",
 };
 
 export default function BlogPost() {
@@ -64,6 +64,10 @@ export default function BlogPost() {
 
                         <p>
                             An SVG creator workflow usually lets you import an image, trace it into vector paths, clean up the output, and export the final graphic — all within a browser.
+                        </p>
+
+                        <p className="mt-8 italic text-muted-foreground border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg">
+                            For a complete guide, read our <Link href="/blog/extract-svg-from-website-guide" className="text-primary hover:underline font-medium">ultimate SVG download tutorial</Link>.
                         </p>
 
                         <div className="mt-12 p-8 bg-primary/5 rounded-2xl border border-primary/20 flex flex-col items-center justify-center text-center">

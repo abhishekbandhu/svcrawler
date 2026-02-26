@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = {
-    title: "Image to SVG: The Complete Conversion Workflow",
-    description: "Learn the complete workflow for turning any picture into a resolution-independent vector file.",
+    title: "Image to SVG Converter – Fast Vector Conversion Tool",
+    description: "Transform any image into SVG format. Upload, convert, and download scalable vector graphics instantly.",
 };
 
 export default function BlogPost() {
@@ -62,6 +62,10 @@ export default function BlogPost() {
 
                         <p>
                             Using image-to-SVG workflows can improve your UI designs, icon sets, and graphics for web and mobile projects.
+                        </p>
+
+                        <p className="mt-8 italic text-muted-foreground border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg">
+                            For a complete guide, read our <Link href="/blog/extract-svg-from-website-guide" className="text-primary hover:underline font-medium">full tutorial on extracting SVG from websites</Link>.
                         </p>
 
                         <div className="mt-12 grid md:grid-cols-2 gap-6">

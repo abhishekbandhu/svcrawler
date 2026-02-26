@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = {
-    title: "Convert to SVG: Ultimate Guide for Web Designers",
-    description: "Learn why and how web designers convert images to SVG for crisp, lightweight graphics.",
+    title: "Convert to SVG Online – JPG, PNG & Image to SVG",
+    description: "Easily convert JPG, PNG, and images to SVG format. Extract and export scalable vectors with SVG Crawler.",
 };
 
 export default function BlogPost() {
@@ -68,6 +68,10 @@ export default function BlogPost() {
 
                         <p>
                             Converting your images to SVG will make your designs sharper, faster, and more adaptable than traditional bitmap graphics.
+                        </p>
+
+                        <p className="mt-8 italic text-muted-foreground border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg">
+                            For a complete guide, read our <Link href="/blog/extract-svg-from-website-guide" className="text-primary hover:underline font-medium">ultimate SVG download tutorial</Link>.
                         </p>
 
                         <div className="mt-12 p-8 bg-muted rounded-2xl border border-border text-center">

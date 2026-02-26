@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = {
-    title: "SVG Converter: What It Is & How to Use It",
-    description: "Learn how an SVG converter transforms raster images into scalable, editable vector graphics.",
+    title: "SVG Converter Online – Fast & Free SVG Conversion Tool",
+    description: "Convert images to SVG instantly. Use SVG Crawler to extract, convert, and download scalable vector graphics from any website.",
 };
 
 export default function BlogPost() {
@@ -68,6 +68,10 @@ export default function BlogPost() {
 
                         <p>
                             Learn how to quickly convert files by uploading your image into a converter section of the site — then download your scalable SVG for design or web work.
+                        </p>
+
+                        <p className="mt-8 italic text-muted-foreground border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg">
+                            For a complete guide, read our <Link href="/blog/extract-svg-from-website-guide" className="text-primary hover:underline font-medium">full tutorial on extracting SVG from websites</Link>.
                         </p>
 
                         <div className="mt-12 p-8 bg-primary/5 rounded-2xl border border-primary/20 text-center">
