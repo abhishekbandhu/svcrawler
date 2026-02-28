@@ -5,6 +5,14 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
     {
+        slug: "png-to-svg",
+        title: "Convert PNG to SVG Online | Fast & Free Raster to Vector",
+        excerpt: "Convert PNG to SVG instantly online. Learn how to vectorize PNG images, compare PNG vs SVG, and extract scalable graphics without tracing.",
+        date: "Feb 28, 2026",
+        author: "Content Strategist",
+        image: "https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop",
+    },
+    {
         slug: "extract-svg-from-website-guide",
         title: "Extract SVG from Website – Download Any SVG",
         excerpt: "Extract SVG files from any website instantly. Detect inline and external SVG elements using SVG Crawler.",
