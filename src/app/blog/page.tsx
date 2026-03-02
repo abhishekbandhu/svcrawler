@@ -77,8 +77,8 @@ const posts = [
         image: "https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop",
     },
     {
-        slug: "top-10-svg-icons-2024",
-        title: "Top 10 SVG Icon Sets for 2024",
+        slug: "top-10-svg-icons-2026",
+        title: "Top 10 SVG Icon Sets for 2026",
         excerpt: "Discover the best SVG icon libraries that will speed up your workflow and make your designs pop.",
         date: "Feb 17, 2026",
         author: "Alex Designer",

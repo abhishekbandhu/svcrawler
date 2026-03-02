@@ -23,10 +23,10 @@ export default function BlogPost() {
                             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 5 min read</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">
-                            Top 10 SVG Icon Sets for 2024
+                            Top 10 SVG Icon Sets for 2026
                         </h1>
                         <p className="text-xl text-muted-foreground leading-relaxed">
-                            Discover the best SVG icon libraries that will speed up your workflow and make your designs pop in 2024.
+                            Discover the best SVG icon libraries that will speed up your workflow and make your designs pop in 2026.
                         </p>
                     </header>
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
 
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <p>
-                            Scalable Vector Graphics (SVGs) are the backbone of modern web design. They are crisp, lightweight, and infinitely scalable. But finding high-quality SVG icons can be a challenge. We've curated a list of the top 10 SVG icon sets you should know about in 2024.
+                            Scalable Vector Graphics (SVGs) are the backbone of modern web design. They are crisp, lightweight, and infinitely scalable. But finding high-quality SVG icons can be a challenge. We've curated a list of the top 10 SVG icon sets you should know about in 2026.
                         </p>
 
                         <h2>1. Lucide Icons</h2>

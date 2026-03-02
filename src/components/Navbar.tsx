@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,10 +43,14 @@ export function Navbar() {
                     <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
                     <Link href="/#features" className="hover:text-foreground transition-colors">Features</Link>
                     <Link href="/#faq" className="hover:text-foreground transition-colors">FAQ</Link>
+                    <div className="pl-4 border-l border-border/50">
+                        <ThemeToggle />
+                    </div>
                 </nav>
 
                 {/* Mobile Menu Toggle Button */}
-                <div className="lg:hidden flex items-center">
+                <div className="lg:hidden flex items-center gap-2">
+                    <ThemeToggle />
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="p-2 text-foreground focus:outline-none"
