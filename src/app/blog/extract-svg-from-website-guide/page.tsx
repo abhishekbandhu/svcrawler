@@ -83,7 +83,7 @@ export default function BlogPost() {
                             <li>JavaScript-injected SVG</li>
                         </ul>
 
-                        <p>Manually extracting them using DevTools can be difficult and time-consuming. That’s where SVG extraction tools help. You can automatically scan and detect SVG elements using: 👉 <Link href="/">https://www.svgcrawler.com/</Link></p>
+                        <p>Manually extracting them using DevTools can be difficult and time-consuming. That’s where SVG extraction tools help. You can automatically scan and detect SVG elements using: 👉 <Link href="/">https://svgcrawler.com/</Link></p>
 
                         <h2>How to Extract SVG from a Website (Step-by-Step)</h2>
                         <p>Depending on your technical expertise, there are three main methods for extracting vector assets from a browser DOM.</p>

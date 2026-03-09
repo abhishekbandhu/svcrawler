@@ -9,6 +9,10 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 export const metadata: Metadata = {
   title: "SVG Crawler & Export Tool",
   description: "Extract, optimize, and organize SVGs from any website.",
+  metadataBase: new URL('https://svgcrawler.com'),
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({
