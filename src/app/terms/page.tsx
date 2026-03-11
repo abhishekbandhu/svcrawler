@@ -8,30 +8,70 @@ export default function TermsPage() {
             <main className="flex-1 pt-32 pb-20 container mx-auto px-4 max-w-3xl">
                 <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
                 <div className="prose prose-lg dark:prose-invert">
-                    <p>Last updated: February 17, 2026</p>
-                    <h2>1. Terms</h2>
-                    <p>
-                        By accessing this Website, accessible from svgcrawler.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site.
-                    </p>
-                    <h2>2. Use License</h2>
-                    <p>
-                        Permission is granted to temporarily download one copy of the materials on SVG Crawler's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-                    </p>
+                    <p>Last Updated: March 2026</p>
+                    <p>Welcome to SVG Crawler. By accessing or using <a href="https://svgcrawler.com/">https://svgcrawler.com/</a>, you agree to comply with and be bound by the following Terms of Service.</p>
+                    <p>If you do not agree with these terms, please do not use this website.</p>
+
+                    <h2>1. Description of Service</h2>
+                    <p>SVG Crawler is an online tool that allows users to:</p>
                     <ul>
-                        <li>modify or copy the materials;</li>
-                        <li>use the materials for any commercial purpose or for any public display;</li>
-                        <li>attempt to reverse engineer any software contained on SVG Crawler's Website;</li>
-                        <li>remove any copyright or other proprietary notations from the materials; or</li>
-                        <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+                        <li>Detect and extract SVG files embedded within publicly accessible web pages</li>
+                        <li>Convert SVG files to PNG format</li>
+                        <li>Convert images to SVG format</li>
                     </ul>
-                    <h2>3. Disclaimer</h2>
-                    <p>
-                        All the materials on SVG Crawler's Website are provided "as is". SVG Crawler makes no warranties, may it be expressed or implied, therefore negates all other warranties.
-                    </p>
-                    <h2>4. Limitations</h2>
-                    <p>
-                        SVG Crawler or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on SVG Crawler's Website, even if SVG Crawler or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage.
-                    </p>
+                    <p>The service is provided for educational, research, and convenience purposes only. SVG Crawler does not host, own, or control the SVG files extracted from third-party websites.</p>
+
+                    <h2>2. Ownership of Extracted Content</h2>
+                    <p>SVG files discovered or downloaded using SVG Crawler may belong to third-party websites, designers, or organizations.</p>
+                    <p>SVG Crawler:</p>
+                    <ul>
+                        <li>Does not claim ownership of any extracted SVG files</li>
+                        <li>Does not grant licenses for the use of extracted files</li>
+                        <li>Does not transfer copyright or usage rights</li>
+                    </ul>
+                    <p>All intellectual property rights remain with the original copyright holder. Users are solely responsible for verifying licensing terms before using any extracted files.</p>
+
+                    <h2>3. User Responsibility</h2>
+                    <p>By using SVG Crawler, you agree that:</p>
+                    <ul>
+                        <li>You will respect copyright and intellectual property laws.</li>
+                        <li>You will obtain proper permission before using extracted assets commercially.</li>
+                        <li>You will not use extracted files in a way that violates copyright, trademark, or licensing terms.</li>
+                    </ul>
+                    <p>SVG Crawler is not responsible for any misuse of downloaded or extracted content.</p>
+
+                    <h2>4. Permitted Use</h2>
+                    <p>You may use SVG Crawler for:</p>
+                    <ul>
+                        <li>Learning and educational purposes</li>
+                        <li>Inspecting how SVG graphics are used on websites</li>
+                        <li>Extracting SVGs when you have permission to use them</li>
+                    </ul>
+                    <p>You agree not to use the service for illegal or infringing purposes.</p>
+
+                    <h2>5. No Warranty</h2>
+                    <p>SVG Crawler is provided "as is" and "as available" without warranties of any kind. We do not guarantee:</p>
+                    <ul>
+                        <li>Accuracy of extracted files</li>
+                        <li>Availability of the service</li>
+                        <li>Suitability of extracted graphics for any specific purpose</li>
+                    </ul>
+                    <p>Use of the service is at your own risk.</p>
+
+                    <h2>6. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by law, SVG Crawler and its operators shall not be liable for: Any copyright violations by users, Damages resulting from the use of extracted files, Loss of data or business interruption. Users assume full responsibility for how they use any extracted content.</p>
+
+                    <h2>7. Third-Party Websites</h2>
+                    <p>SVG Crawler may interact with or analyze third-party websites. These websites are not controlled by SVG Crawler. We are not responsible for: Content hosted on third-party websites, Their copyright policies, Their terms or licensing conditions.</p>
+
+                    <h2>8. Service Changes</h2>
+                    <p>We reserve the right to: Modify or discontinue the service, Add or remove features, Update these Terms of Service. Changes may occur at any time without prior notice.</p>
+
+                    <h2>9. Acceptance of Terms</h2>
+                    <p>By using SVG Crawler, you confirm that you: Understand these terms, Accept responsibility for how you use extracted content, Agree to comply with copyright laws and licensing requirements.</p>
+
+                    <h2>10. Contact</h2>
+                    <p>For questions regarding these Terms of Service, you may contact us through the website contact page.</p>
                 </div>
             </main>
             <Footer />

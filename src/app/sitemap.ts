@@ -13,14 +13,16 @@ const staticRoutes = [
     '/image-to-svg',
     '/privacy',
     '/terms',
+    '/disclaimer',
     '/blog'
 ];
 
 // Re-defining the blog posts map for sitemap generation
 // In a full production app with a CMS, this would be an async fetch.
 const blogPosts = [
+    'is-it-legal-to-download-svg-from-website',
     'png-to-svg',
-    'extract-svg-from-website-guide',
+    'extract-svg-from-website',
     'export-svg-from-website',
     'download-svg-from-website',
     'svg-creator-guide',

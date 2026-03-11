@@ -5,6 +5,14 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
     {
+        slug: "is-it-legal-to-download-svg-from-website",
+        title: "Is It Legal to Download SVGs from a Website?",
+        excerpt: "Learn about the copyright and licensing rules for extracting SVG files from websites. Is it legal to download SVGs? Find out what you need to know.",
+        date: "Mar 11, 2026",
+        author: "Legal Expert",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    },
+    {
         slug: "png-to-svg",
         title: "Convert PNG to SVG Online | Fast & Free Raster to Vector",
         excerpt: "Convert PNG to SVG instantly online. Learn how to vectorize PNG images, compare PNG vs SVG, and extract scalable graphics without tracing.",
@@ -13,11 +21,11 @@ const posts = [
         image: "https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop",
     },
     {
-        slug: "extract-svg-from-website-guide",
-        title: "Extract SVG from Website – Download Any SVG",
-        excerpt: "Extract SVG files from any website instantly. Detect inline and external SVG elements using SVG Crawler.",
-        date: "Feb 26, 2026",
-        author: "Admin",
+        slug: "extract-svg-from-website",
+        title: "How to Extract SVG from Any Website | Fast & Easy",
+        excerpt: "Learn how to extract SVG from website source code using manual methods or an automated SVG extractor tool. Step-by-step guide for designers & developers.",
+        date: "Mar 11, 2026",
+        author: "Content Strategist",
         image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop",
     },
     {
@@ -30,10 +38,10 @@ const posts = [
     },
     {
         slug: "download-svg-from-website",
-        title: "Download SVG from Website – Easy SVG Extractor",
-        excerpt: "Download SVG graphics from websites without DevTools. Extract icons, logos, and vectors instantly.",
-        date: "Feb 26, 2026",
-        author: "Admin",
+        title: "How to Download SVG Icons from Any Website",
+        excerpt: "Need to download SVG from webpage? Discover the best ways to inspect, copy, and download SVG files from websites using dev tools or an SVG extractor.",
+        date: "Mar 11, 2026",
+        author: "Content Strategist",
         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
     },
     {
@@ -86,10 +94,10 @@ const posts = [
     },
     {
         slug: "svg-vs-png",
-        title: "SVG vs PNG: When to Use Which?",
-        excerpt: "Understand the key differences between vector and raster graphics and when to use each format.",
-        date: "Feb 10, 2026",
-        author: "Sarah Dev",
+        title: "SVG vs PNG: Which Format Is Better for Websites?",
+        excerpt: "Compare SVG vs PNG for web design. Learn the differences between vector and raster formats, performance benchmarks, and when to use an SVG to PNG converter.",
+        date: "Mar 11, 2026",
+        author: "Content Strategist",
         image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
     },
     {
