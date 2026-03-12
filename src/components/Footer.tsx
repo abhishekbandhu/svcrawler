@@ -25,9 +25,10 @@ export function Footer() {
                     <div>
                         <h3 className="font-semibold mb-4 text-sm">Product</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
+                            <li><Link href="/convert" className="hover:text-foreground transition-colors">SVG to PNG</Link></li>
+                            <li><Link href="/image-to-svg" className="hover:text-foreground transition-colors">Image to SVG</Link></li>
+                            <li><Link href="/favicon-generator" className="hover:text-foreground transition-colors">Favicon Generator</Link></li>
                             <li><Link href="#features" className="hover:text-foreground transition-colors">Features</Link></li>
-                            <li><Link href="/about" className="hover:text-foreground transition-colors">About</Link></li>
-                            <li><Link href="#" className="hover:text-foreground transition-colors">Changelog</Link></li>
                         </ul>
                     </div>
                     <div>

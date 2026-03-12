@@ -40,6 +40,7 @@ export function Navbar() {
                 <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-muted-foreground">
                     <Link href="/convert" className="hover:text-primary transition-colors text-foreground font-semibold">SVG to PNG</Link>
                     <Link href="/image-to-svg" className="hover:text-primary transition-colors text-foreground font-semibold">Image to SVG</Link>
+                    <Link href="/favicon-generator" className="hover:text-primary transition-colors text-foreground font-semibold">Favicons</Link>
                     <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
                     <Link href="/#features" className="hover:text-foreground transition-colors">Features</Link>
                     <Link href="/#faq" className="hover:text-foreground transition-colors">FAQ</Link>
@@ -67,6 +68,7 @@ export function Navbar() {
                     <nav className="flex flex-col py-4 px-6 gap-4 text-base font-medium">
                         <Link href="/convert" onClick={closeMobileMenu} className="hover:text-primary transition-colors text-foreground font-semibold py-2">SVG to PNG</Link>
                         <Link href="/image-to-svg" onClick={closeMobileMenu} className="hover:text-primary transition-colors text-foreground font-semibold py-2">Image to SVG</Link>
+                        <Link href="/favicon-generator" onClick={closeMobileMenu} className="hover:text-primary transition-colors text-foreground font-semibold py-2">Favicon Generator</Link>
                         <Link href="/blog" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">Blog</Link>
                         <Link href="/#features" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">Features</Link>
                         <Link href="/#faq" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">FAQ</Link>

@@ -11,6 +11,7 @@ const staticRoutes = [
     '/about',
     '/convert',
     '/image-to-svg',
+    '/favicon-generator',
     '/privacy',
     '/terms',
     '/disclaimer',
