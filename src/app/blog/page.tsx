@@ -5,6 +5,22 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
     {
+        slug: "best-sites-to-convert-png-to-svg",
+        title: "5 Best Sites to Convert PNG to SVG Online",
+        excerpt: "Compare top tools, automatic tracers, and see why SVG Crawler is the fastest in-browser solution.",
+        date: "Apr 17, 2026",
+        author: "Content Strategist",
+        image: "https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop",
+    },
+    {
+        slug: "how-to-convert-jpg-to-svg",
+        title: "How to Convert JPG to SVG Online | The Ultimate Guide",
+        excerpt: "Discover the top methods, tools, and best practices to transform raster images into scalable vector graphics online.",
+        date: "Apr 17, 2026",
+        author: "Content Strategist",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    },
+    {
         slug: "is-it-legal-to-download-svg-from-website",
         title: "Is It Legal to Download SVGs from a Website?",
         excerpt: "Learn about the copyright and licensing rules for extracting SVG files from websites. Is it legal to download SVGs? Find out what you need to know.",

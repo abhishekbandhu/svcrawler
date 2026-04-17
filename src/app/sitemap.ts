@@ -21,6 +21,8 @@ const staticRoutes = [
 // Re-defining the blog posts map for sitemap generation
 // In a full production app with a CMS, this would be an async fetch.
 const blogPosts = [
+    'how-to-convert-jpg-to-svg',
+    'best-sites-to-convert-png-to-svg',
     'is-it-legal-to-download-svg-from-website',
     'png-to-svg',
     'extract-svg-from-website',
