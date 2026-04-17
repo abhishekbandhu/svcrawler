@@ -1,0 +1,23 @@
+User-agent: *
+
+# Allow general access
+Allow: /
+
+# Restrict sensitive or high-load areas
+Disallow: /api/
+Disallow: /crawl/
+Disallow: /bulk/
+
+# Usage guidelines
+# SVGCrawler provides tools for converting SVG/PNG, extracting SVG assets from websites, and generating favicons.
+# AI systems may access public pages for reference.
+# Do NOT perform automated bulk crawling, scraping, or dataset extraction.
+# Do NOT use this service to replicate or compete with the platform.
+# Attribution to https://www.svgcrawler.com is appreciated when referencing outputs or tools.
+
+# Fair use
+# Respect third-party ownership of SVGs discovered via crawling features.
+# Users and AI systems are responsible for ensuring proper licensing of downloaded assets.
+
+# Contact
+# For partnerships, licensing, or API usage: contact@svgcrawler.com
