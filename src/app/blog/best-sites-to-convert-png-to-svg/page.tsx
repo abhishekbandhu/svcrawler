@@ -17,6 +17,49 @@ export default function BestSitesPngToSvgPost() {
             <Navbar />
 
             <main className="flex-1 pt-32 pb-24">
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "5 Best Sites to Convert PNG to SVG Online (2026 Guide)",
+                        "description": "Looking for the best sites to convert PNG to SVG online? Compare top tools, automatic tracers, and see why SVG Crawler is the fastest in-browser solution.",
+                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://svgcrawler.com/logo.png"
+                            }
+                        }
+                    }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://svgcrawler.com/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "https://svgcrawler.com/blog"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "5 Best Sites to Convert PNG to SVG Online (2026 Guide)",
+                                "item": "https://svgcrawler.com/blog/best-sites-to-convert-png-to-svg"
+                            }
+                        ]
+                    }) }} />
                 <div className="container mx-auto px-4 max-w-4xl">
                     <article className="prose prose-lg dark:prose-invert mx-auto">
                         <header className="mb-12 not-prose">

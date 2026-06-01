@@ -6,11 +6,41 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Image to SVG Converter | Free Online Vectorizer",
     description: "Convert PNG or JPG images to scalable vector graphics (SVG) instantly. Runs fully in your browser for total privacy.",
+    alternates: {
+        canonical: "/image-to-svg",
+    },
+    openGraph: {
+        title: "Image to SVG Converter | Free Online Vectorizer",
+        description: "Convert PNG or JPG images to scalable vector graphics (SVG) instantly. Runs fully in your browser.",
+        url: "https://svgcrawler.com/image-to-svg",
+        siteName: "SVG Crawler",
+        images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Image to SVG Converter | Free Online Vectorizer",
+        description: "Convert PNG or JPG images to scalable vector graphics (SVG) instantly.",
+        images: ["https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"],
+    },
 };
 
 export default function ImageToSvgPage() {
     return (
         <div className="min-h-screen bg-background flex flex-col font-sans text-foreground">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": "Image to SVG Converter",
+                        "applicationCategory": "DesignApplication",
+                        "operatingSystem": "Web",
+                        "url": "https://svgcrawler.com/image-to-svg",
+                        "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
+                    }),
+                }}
+            />
             <Navbar />
 
             <main className="flex-1 pt-32 pb-20">

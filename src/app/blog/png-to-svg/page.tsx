@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
+import { Metadata } from "next";
 export const metadata = {
     title: "Convert PNG to SVG Online | Fast & Free Raster to Vector",
     description: "Convert PNG to SVG instantly online. Learn how to vectorize PNG images, compare PNG vs SVG, and extract scalable graphics without tracing.",
@@ -60,6 +61,49 @@ export default function BlogPost() {
         <div className="min-h-screen bg-background flex flex-col font-sans text-foreground">
             <Navbar />
             <main className="flex-1 pt-32 pb-20">
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "Convert PNG to SVG Online | Fast & Free Raster to Vector",
+                        "description": "Convert PNG to SVG instantly online. Learn how to vectorize PNG images, compare PNG vs SVG, and extract scalable graphics without tracing.",
+                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://svgcrawler.com/logo.png"
+                            }
+                        }
+                    }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://svgcrawler.com/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "https://svgcrawler.com/blog"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "Convert PNG to SVG Online | Fast & Free Raster to Vector",
+                                "item": "https://svgcrawler.com/blog/png-to-svg"
+                            }
+                        ]
+                    }) }} />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

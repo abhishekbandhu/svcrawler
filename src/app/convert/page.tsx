@@ -1,10 +1,46 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SvgConverter } from "@/components/SvgConverter";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "SVG to PNG Converter | Free Online Vector to Raster",
+    description: "Convert your scalable vector graphics (SVG) to high-resolution raster images (PNG, JPG) instantly. No server uploads, 100% private.",
+    alternates: {
+        canonical: "/convert",
+    },
+    openGraph: {
+        title: "SVG to PNG Converter | Free Online Vector to Raster",
+        description: "Convert your scalable vector graphics (SVG) to high-resolution raster images (PNG, JPG) instantly.",
+        url: "https://svgcrawler.com/convert",
+        siteName: "SVG Crawler",
+        images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "SVG to PNG Converter | Free Online Vector to Raster",
+        description: "Convert your scalable vector graphics (SVG) to high-resolution raster images (PNG, JPG) instantly.",
+        images: ["https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"],
+    },
+};
 
 export default function ConvertPage() {
     return (
         <div className="min-h-screen bg-background flex flex-col font-sans text-foreground">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": "SVG to PNG Converter",
+                        "applicationCategory": "DesignApplication",
+                        "operatingSystem": "Web",
+                        "url": "https://svgcrawler.com/convert",
+                        "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
+                    }),
+                }}
+            />
             <Navbar />
 
             <main className="flex-1 pt-32 pb-20">

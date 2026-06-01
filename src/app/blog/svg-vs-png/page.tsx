@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import Link from "next/link";
@@ -15,6 +16,49 @@ export default function BlogPost() {
         <div className="min-h-screen bg-background flex flex-col font-sans text-foreground">
             <Navbar />
             <main className="flex-1 pt-32 pb-20">
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "SVG vs PNG: Which Format Is Better for Websites?",
+                        "description": "Compare SVG vs PNG for web design. Learn the differences between vector and raster formats, performance benchmarks, and when to use an SVG to PNG converter.",
+                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://svgcrawler.com/logo.png"
+                            }
+                        }
+                    }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://svgcrawler.com/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "https://svgcrawler.com/blog"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "SVG vs PNG: Which Format Is Better for Websites?",
+                                "item": "https://svgcrawler.com/blog/svg-vs-png"
+                            }
+                        ]
+                    }) }} />
                 <div className="container mx-auto px-4 max-w-3xl">
                     <Link href="/blog" className="text-primary hover:underline mb-8 inline-flex items-center text-sm font-medium">
                         &larr; Back to Blog

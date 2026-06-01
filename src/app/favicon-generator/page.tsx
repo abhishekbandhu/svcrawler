@@ -10,11 +10,38 @@ export const metadata = {
     alternates: {
         canonical: "/favicon-generator",
     },
+    openGraph: {
+        title: "Free Favicon Generator Tool | Create .ICO, PNG",
+        description: "Generate a perfect set of favicons for your website instantly from any image.",
+        url: "https://svgcrawler.com/favicon-generator",
+        siteName: "SVG Crawler",
+        images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Free Favicon Generator Tool | Create .ICO, PNG",
+        description: "Generate a perfect set of favicons for your website instantly from any image.",
+        images: ["https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"],
+    },
 };
 
 export default function FaviconGeneratorPage() {
     return (
         <div className="min-h-screen bg-background flex flex-col font-sans text-foreground">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": "Favicon Generator",
+                        "applicationCategory": "DesignApplication",
+                        "operatingSystem": "Web",
+                        "url": "https://svgcrawler.com/favicon-generator",
+                        "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
+                    }),
+                }}
+            />
             <Navbar />
 
             <main className="flex-1 pt-32 pb-24">

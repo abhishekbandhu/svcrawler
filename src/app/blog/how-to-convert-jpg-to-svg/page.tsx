@@ -17,6 +17,49 @@ export default function HowToConvertJpgToSvgPost() {
             <Navbar />
 
             <main className="flex-1 pt-32 pb-24">
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "How to Convert JPG to SVG Online | The Ultimate Guide (2026)",
+                        "description": "Learn how to convert JPG to SVG easily. Discover the top methods, tools, and best practices to transform raster images into scalable vector graphics online.",
+                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://svgcrawler.com/logo.png"
+                            }
+                        }
+                    }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://svgcrawler.com/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "https://svgcrawler.com/blog"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "How to Convert JPG to SVG Online | The Ultimate Guide (2026)",
+                                "item": "https://svgcrawler.com/blog/how-to-convert-jpg-to-svg"
+                            }
+                        ]
+                    }) }} />
                 <div className="container mx-auto px-4 max-w-4xl">
                     <article className="prose prose-lg dark:prose-invert mx-auto">
                         <header className="mb-12 not-prose">

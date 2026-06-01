@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft, Calendar, User, Clock, ArrowRight } from "lucide-react";
 
+import { Metadata } from "next";
 export const metadata = {
     title: "JPG to SVG Converter – Turn Images into Vector Files",
     description: "Convert JPG to SVG online. Create scalable vector graphics for logos, icons, and web design using SVG Crawler.",
@@ -14,6 +15,49 @@ export default function BlogPost() {
             <Navbar />
 
             <main className="flex-1 pt-32 pb-20">
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "JPG to SVG Converter – Turn Images into Vector Files",
+                        "description": "Convert JPG to SVG online. Create scalable vector graphics for logos, icons, and web design using SVG Crawler.",
+                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "SVG Crawler",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://svgcrawler.com/logo.png"
+                            }
+                        }
+                    }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://svgcrawler.com/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": "https://svgcrawler.com/blog"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "JPG to SVG Converter – Turn Images into Vector Files",
+                                "item": "https://svgcrawler.com/blog/jpg-to-svg-conversion"
+                            }
+                        ]
+                    }) }} />
                 <article className="container mx-auto px-4 max-w-3xl">
                     <Link href="/blog" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-8 transition-colors">
                         <ArrowLeft className="w-4 h-4 mr-2" />

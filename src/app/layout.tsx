@@ -10,8 +10,27 @@ export const metadata: Metadata = {
   title: "SVG Crawler & Export Tool",
   description: "Extract, optimize, and organize SVGs from any website.",
   metadataBase: new URL('https://svgcrawler.com'),
-  alternates: {
-    canonical: '/',
+  openGraph: {
+    title: 'SVG Crawler & Export Tool',
+    description: 'Extract, optimize, and organize SVGs from any website.',
+    url: 'https://svgcrawler.com',
+    siteName: 'SVG Crawler',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: 'SVG Crawler & Export Tool OG Image',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SVG Crawler & Export Tool',
+    description: 'Extract, optimize, and organize SVGs from any website.',
+    images: ['https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop'],
   },
 };
 
