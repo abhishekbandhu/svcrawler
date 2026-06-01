@@ -32,7 +32,7 @@ export default function BestSitesPngToSvgPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -44,19 +44,19 @@ export default function BestSitesPngToSvgPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "5 Best Sites to Convert PNG to SVG Online (2026 Guide)",
-                                "item": "https://svgcrawler.com/blog/best-sites-to-convert-png-to-svg"
+                                "item": "https://www.svgcrawler.com/blog/best-sites-to-convert-png-to-svg"
                             }
                         ]
                     }) }} />

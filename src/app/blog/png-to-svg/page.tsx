@@ -76,7 +76,7 @@ export default function BlogPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -88,19 +88,19 @@ export default function BlogPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "Convert PNG to SVG Online | Fast & Free Raster to Vector",
-                                "item": "https://svgcrawler.com/blog/png-to-svg"
+                                "item": "https://www.svgcrawler.com/blog/png-to-svg"
                             }
                         ]
                     }) }} />

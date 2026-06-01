@@ -18,8 +18,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'www.svgcrawler.com' }],
-        destination: 'https://svgcrawler.com/:path*',
+        has: [{ type: 'host', value: 'svgcrawler.com' }],
+        destination: 'https://www.svgcrawler.com/:path*',
         permanent: true,
       },
     ]

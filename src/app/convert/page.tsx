@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "SVG to PNG Converter | Free Online Vector to Raster",
         description: "Convert your scalable vector graphics (SVG) to high-resolution raster images (PNG, JPG) instantly.",
-        url: "https://svgcrawler.com/convert",
+        url: "https://www.svgcrawler.com/convert",
         siteName: "SVG Crawler",
         images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
     },
@@ -36,7 +36,7 @@ export default function ConvertPage() {
                         "name": "SVG to PNG Converter",
                         "applicationCategory": "DesignApplication",
                         "operatingSystem": "Web",
-                        "url": "https://svgcrawler.com/convert",
+                        "url": "https://www.svgcrawler.com/convert",
                         "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
                     }),
                 }}

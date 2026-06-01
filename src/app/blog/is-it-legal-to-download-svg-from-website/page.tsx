@@ -31,7 +31,7 @@ export default function BlogPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -43,19 +43,19 @@ export default function BlogPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "Is It Legal to Download SVGs from a Website? | SVG Copyright",
-                                "item": "https://svgcrawler.com/blog/is-it-legal-to-download-svg-from-website"
+                                "item": "https://www.svgcrawler.com/blog/is-it-legal-to-download-svg-from-website"
                             }
                         ]
                     }) }} />

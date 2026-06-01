@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Image to SVG Converter | Free Online Vectorizer",
         description: "Convert PNG or JPG images to scalable vector graphics (SVG) instantly. Runs fully in your browser.",
-        url: "https://svgcrawler.com/image-to-svg",
+        url: "https://www.svgcrawler.com/image-to-svg",
         siteName: "SVG Crawler",
         images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
     },
@@ -36,7 +36,7 @@ export default function ImageToSvgPage() {
                         "name": "Image to SVG Converter",
                         "applicationCategory": "DesignApplication",
                         "operatingSystem": "Web",
-                        "url": "https://svgcrawler.com/image-to-svg",
+                        "url": "https://www.svgcrawler.com/image-to-svg",
                         "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
                     }),
                 }}

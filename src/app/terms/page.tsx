@@ -9,7 +9,7 @@ export default function TermsPage() {
                 <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
                 <div className="prose prose-lg dark:prose-invert">
                     <p>Last Updated: March 2026</p>
-                    <p>Welcome to SVG Crawler. By accessing or using <a href="https://svgcrawler.com/">https://svgcrawler.com/</a>, you agree to comply with and be bound by the following Terms of Service.</p>
+                    <p>Welcome to SVG Crawler. By accessing or using <a href="https://www.svgcrawler.com/">https://www.svgcrawler.com/</a>, you agree to comply with and be bound by the following Terms of Service.</p>
                     <p>If you do not agree with these terms, please do not use this website.</p>
 
                     <h2>1. Description of Service</h2>

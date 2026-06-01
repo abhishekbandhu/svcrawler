@@ -31,7 +31,7 @@ export default function BlogPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -43,19 +43,19 @@ export default function BlogPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "How to Extract SVG from Any Website | Fast & Easy",
-                                "item": "https://svgcrawler.com/blog/extract-svg-from-website"
+                                "item": "https://www.svgcrawler.com/blog/extract-svg-from-website"
                             }
                         ]
                     }) }} />
@@ -87,9 +87,9 @@ export default function BlogPost() {
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <p>If you are a web developer, UI/UX designer, or frontend engineer, you already know that Scalable Vector Graphics (SVG) are the gold standard for web icons, logos, and illustrations. Because they are resolution-independent and incredibly lightweight, SVGs keep websites fast and looking sharp on any screen.</p>
 
-                            <p>But what happens when you are seeking inspiration, auditing a website's design system, or debugging how a specific graphic was built, and you need to <a href="https://svgcrawler.com/">extract SVG from website</a> source code?</p>
+                            <p>But what happens when you are seeking inspiration, auditing a website's design system, or debugging how a specific graphic was built, and you need to <a href="https://www.svgcrawler.com/">extract SVG from website</a> source code?</p>
 
-                            <p>In this comprehensive guide, we will walk you through exactly what SVG files are, why modern websites rely on them, and the most effective methods to extract them manually or by using an automated <a href="https://svgcrawler.com/">SVG extractor tool</a>.</p>
+                            <p>In this comprehensive guide, we will walk you through exactly what SVG files are, why modern websites rely on them, and the most effective methods to extract them manually or by using an automated <a href="https://www.svgcrawler.com/">SVG extractor tool</a>.</p>
 
                             <h2>What Are SVG Files?</h2>
                             <p>SVG stands for Scalable Vector Graphics. Unlike traditional raster images (like JPGs, GIFs, or PNGs) that are built using a fixed grid of colored pixels, SVGs are built using XML-based text code that defines mathematical shapes, paths, lines, and colors.</p>
@@ -132,11 +132,11 @@ export default function BlogPost() {
 
                             <h2>Method 3: Using SVG Crawler (The Automated Approach)</h2>
                             <p>Manually inspecting code and digging through the Network tab is incredibly tedious, especially if you need to audit or extract dozens of icons from a complex design system.</p>
-                            <p>The absolute fastest and most efficient method is to use a dedicated <a href="https://svgcrawler.com/">SVG extractor tool</a>. Tools like SVG Crawler are designed to automate the heavy lifting.</p>
+                            <p>The absolute fastest and most efficient method is to use a dedicated <a href="https://www.svgcrawler.com/">SVG extractor tool</a>. Tools like SVG Crawler are designed to automate the heavy lifting.</p>
                             <p><strong>How to Use SVG Crawler:</strong></p>
                             <ol>
                                 <li>Copy the URL of the website you want to analyze.</li>
-                                <li>Paste the URL into the search bar at <a href="https://svgcrawler.com/">svgcrawler.com</a>.</li>
+                                <li>Paste the URL into the search bar at <a href="https://www.svgcrawler.com/">svgcrawler.com</a>.</li>
                                 <li>Hit the extract button. The crawler will instantly scan the entire source code, locate all inline <code>&lt;svg&gt;</code> tags, find all external <code>.svg</code> files, and even detect SVGs hidden inside CSS stylesheets.</li>
                                 <li>Browse the neatly organized visual grid of all discovered graphics.</li>
                                 <li>Click to download individual files, or batch download the entire design system in a single click.</li>
@@ -153,13 +153,13 @@ export default function BlogPost() {
                             <h2>Frequently Asked Questions (FAQ)</h2>
 
                             <h3>Can I extract SVGs hidden inside CSS pseudo-elements?</h3>
-                            <p>Yes. While you cannot simply right-click and save them, you can find them by inspecting the <code>::before</code> or <code>::after</code> pseudo-elements in your DevTools styling pane, or you can use an automated <a href="https://svgcrawler.com/">SVG extractor tool</a> which automatically parses stylesheets for background data URIs.</p>
+                            <p>Yes. While you cannot simply right-click and save them, you can find them by inspecting the <code>::before</code> or <code>::after</code> pseudo-elements in your DevTools styling pane, or you can use an automated <a href="https://www.svgcrawler.com/">SVG extractor tool</a> which automatically parses stylesheets for background data URIs.</p>
 
                             <h3>Why does my copied SVG code not show up in my project?</h3>
                             <p>If you copied inline <code>&lt;svg&gt;</code> code and it is rendering as a blank space, ensure that it has a <code>viewBox</code> attribute defined and that the <code>fill</code> or <code>stroke</code> properties are not completely transparent or matching your background color.</p>
 
                             <h3>Is it possible to convert the extracted SVG into a PNG?</h3>
-                            <p>Absolutely. If you need a fallback raster image for older emails or specific social media meta tags, you can easily use an <a href="https://svgcrawler.com/">SVG to PNG converter</a> to render the vector math back into a static pixel grid.</p>
+                            <p>Absolutely. If you need a fallback raster image for older emails or specific social media meta tags, you can easily use an <a href="https://www.svgcrawler.com/">SVG to PNG converter</a> to render the vector math back into a static pixel grid.</p>
 
                             <h3>Does extracting SVGs bypass website security?</h3>
                             <p>No. Extracting SVGs is simply reading the publicly available, client-side HTML, CSS, and asset files that the server already sent to your browser to render the page. It does not involve hacking or bypassing backend security.</p>

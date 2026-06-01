@@ -31,7 +31,7 @@ export default function BlogPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -43,19 +43,19 @@ export default function BlogPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "How to Download SVG Icons from Any Website",
-                                "item": "https://svgcrawler.com/blog/download-svg-from-website"
+                                "item": "https://www.svgcrawler.com/blog/download-svg-from-website"
                             }
                         ]
                     }) }} />
@@ -87,7 +87,7 @@ export default function BlogPost() {
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <p>Scalable Vector Graphics (SVG) have completely revolutionized web design. They are the backbone of modern UI design, powering everything from complex animated hero illustrations to the tiny navigation icons in your favorite apps.</p>
 
-                            <p>Whether you are a web developer reverse-engineering a beautiful user interface, a UX designer putting together a mood board, or a frontend engineer debugging an icon alignment issue, there are countless times you might need to <a href="https://svgcrawler.com/">download SVG from webpage</a> layouts.</p>
+                            <p>Whether you are a web developer reverse-engineering a beautiful user interface, a UX designer putting together a mood board, or a frontend engineer debugging an icon alignment issue, there are countless times you might need to <a href="https://www.svgcrawler.com/">download SVG from webpage</a> layouts.</p>
 
                             <p>Because SVGs can be implemented in a variety of ways—inline HTML, external asset links, or CSS background images—downloading them isn't always as simple as a right-click. In this guide, we will explore why developers need to download these files, cover manual extraction methods, and show you how to automate the process so you can secure any vector asset you need.</p>
 
@@ -123,7 +123,7 @@ export default function BlogPost() {
 
                             <h2>Using Automated Tools</h2>
                             <p>If you are trying to analyze an entire design system or extract 50 different toolbar icons from a SaaS dashboard, manually parsing through div containers in the DevTools Elements panel will take hours.</p>
-                            <p>This is where automation becomes essential. Using a specialized <a href="https://svgcrawler.com/">SVG extractor tool</a> dramatically speeds up your workflow.</p>
+                            <p>This is where automation becomes essential. Using a specialized <a href="https://www.svgcrawler.com/">SVG extractor tool</a> dramatically speeds up your workflow.</p>
                             <p>Instead of hunting for code, you simply paste the target URL into the platform. A tool like SVG Crawler will autonomously scan the entire DOM structure, intercept network requests, and parse linked CSS stylesheets to find every single vector graphic loading on the page. It consolidates them into a highly visual, searchable grid where you can download exactly what you need with a single click—or download the entire icon set inside a compressed <code>.zip</code> file.</p>
 
                             <h2>Responsible Usage</h2>
@@ -137,7 +137,7 @@ export default function BlogPost() {
                             <p>If an SVG is inline within the HTML code or applied via complex CSS pseudo-classes (<code>::before</code>, <code>::after</code>), the browser treats it as a stylistic layout element or structural code rather than a discrete media file, disabling the standard "Save Image As" context menu.</p>
 
                             <h3>How do I convert a downloaded SVG file to a standard PNG image?</h3>
-                            <p>If you need to upload a vector graphic to a platform that blocks XML-based files (like certain social media managers or legacy CMS platforms), you will need to rasterize it. You can easily do this by running it through a free online <a href="https://svgcrawler.com/">SVG to PNG converter</a>.</p>
+                            <p>If you need to upload a vector graphic to a platform that blocks XML-based files (like certain social media managers or legacy CMS platforms), you will need to rasterize it. You can easily do this by running it through a free online <a href="https://www.svgcrawler.com/">SVG to PNG converter</a>.</p>
 
                             <h3>What if the copied inline SVG code looks distorted on my machine?</h3>
                             <p>This usually occurs because the host website was relying on external CSS classes to control the <code>width</code>, <code>height</code>, or <code>fill</code> colors of the SVG. When you removed the code from its parent website, it lost those CSS rules. You can fix this by manually adding <code>width="100%"</code> and <code>height="100%"</code> attributes inside the opening <code>&lt;svg&gt;</code> tag.</p>

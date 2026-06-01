@@ -13,7 +13,7 @@ export const metadata = {
     openGraph: {
         title: "Free Favicon Generator Tool | Create .ICO, PNG",
         description: "Generate a perfect set of favicons for your website instantly from any image.",
-        url: "https://svgcrawler.com/favicon-generator",
+        url: "https://www.svgcrawler.com/favicon-generator",
         siteName: "SVG Crawler",
         images: [{ url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" }],
     },
@@ -37,7 +37,7 @@ export default function FaviconGeneratorPage() {
                         "name": "Favicon Generator",
                         "applicationCategory": "DesignApplication",
                         "operatingSystem": "Web",
-                        "url": "https://svgcrawler.com/favicon-generator",
+                        "url": "https://www.svgcrawler.com/favicon-generator",
                         "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
                     }),
                 }}

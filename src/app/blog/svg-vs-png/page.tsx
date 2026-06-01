@@ -31,7 +31,7 @@ export default function BlogPost() {
                             "name": "SVG Crawler",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://svgcrawler.com/logo.png"
+                                "url": "https://www.svgcrawler.com/logo.png"
                             }
                         }
                     }) }} />
@@ -43,19 +43,19 @@ export default function BlogPost() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://svgcrawler.com/"
+                                "item": "https://www.svgcrawler.com/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Blog",
-                                "item": "https://svgcrawler.com/blog"
+                                "item": "https://www.svgcrawler.com/blog"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": "SVG vs PNG: Which Format Is Better for Websites?",
-                                "item": "https://svgcrawler.com/blog/svg-vs-png"
+                                "item": "https://www.svgcrawler.com/blog/svg-vs-png"
                             }
                         ]
                     }) }} />
@@ -128,7 +128,7 @@ export default function BlogPost() {
                                 <li><strong>Flat Illustrations:</strong> Character designs and geometric hero graphics that utilize solid colors, flat shading, and sharp geometric curves.</li>
                                 <li><strong>Data Visualizations:</strong> Complex interactive charts and graphs generated dynamically by code.</li>
                             </ul>
-                            <p><em>Pro tip: If you need to inspect how top tech companies construct their SVG architecture, you can use an <a href="https://svgcrawler.com/">extract SVG from website</a> script or an <a href="https://svgcrawler.com/">SVG extractor tool</a> to pull their raw code for competitive analysis.</em></p>
+                            <p><em>Pro tip: If you need to inspect how top tech companies construct their SVG architecture, you can use an <a href="https://www.svgcrawler.com/">extract SVG from website</a> script or an <a href="https://www.svgcrawler.com/">SVG extractor tool</a> to pull their raw code for competitive analysis.</em></p>
 
                             <h2>When to Use PNG</h2>
                             <p>Despite SVG’s overwhelming superiority in UI design, PNGs still serve an irreplaceable roll on the web when it comes to photographic fidelity and highly complex textures. You should explicitly use PNG formatting for:</p>
@@ -139,7 +139,7 @@ export default function BlogPost() {
 
                             <h2>Converting Between Formats</h2>
                             <p>Sometimes you have a high-quality vector graphic, but you are forced to work with a legacy Content Management System (CMS), an older HTML email client, or a strict social media meta-tag parser that outright refuses to accept XML files for security reasons.</p>
-                            <p>In these technical scenarios, you must rasterize your vector graphic. An automated <a href="https://svgcrawler.com/">SVG to PNG converter</a> allows you to parse the math of the vector, lock the graphic at the exact resolution you require, and flatten it into a universally accepted HTML standard image grid. Conversely, if you want more information on optimizing raster imagery to vector paths, check out our guide on <Link href="/blog/png-to-svg">PNG to SVG conversions</Link>.</p>
+                            <p>In these technical scenarios, you must rasterize your vector graphic. An automated <a href="https://www.svgcrawler.com/">SVG to PNG converter</a> allows you to parse the math of the vector, lock the graphic at the exact resolution you require, and flatten it into a universally accepted HTML standard image grid. Conversely, if you want more information on optimizing raster imagery to vector paths, check out our guide on <Link href="/blog/png-to-svg">PNG to SVG conversions</Link>.</p>
 
                             <h2>Frequently Asked Questions</h2>
 
@@ -150,7 +150,7 @@ export default function BlogPost() {
                             <p>Not always. If you attempt to force an SVG to render a deeply complex, hyper-realistic, highly-detailed photographic texture, the amount of vertex and path code generated will result in a file size massively larger than an equivalent PNG. Always use SVG for simple geometry and PNG/WebP for photography.</p>
 
                             <h3>Can I easily scrape SVGs from websites?</h3>
-                            <p>Yes. You can <a href="https://svgcrawler.com/">download SVG from webpage</a> environments either completely manually using your browser's Developer Tools or automatically using a web crawler mapping platform.</p>
+                            <p>Yes. You can <a href="https://www.svgcrawler.com/">download SVG from webpage</a> environments either completely manually using your browser's Developer Tools or automatically using a web crawler mapping platform.</p>
 
                             <div className="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 mt-8">
                                 <p className="text-amber-800 dark:text-amber-200 m-0">

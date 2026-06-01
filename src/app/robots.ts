@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         '/bulk/'
       ],
     },
-    sitemap: 'https://svgcrawler.com/sitemap.xml',
+    sitemap: 'https://www.svgcrawler.com/sitemap.xml',
   }
 }

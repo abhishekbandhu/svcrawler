@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 // Define the base URL we want to force
-const BASE_URL = 'https://svgcrawler.com';
+const BASE_URL = 'https://www.svgcrawler.com';
 
 // If you have dynamic blog posts fetched from an API, you would iterate them here
 // Since we are working with static files in this example codebase, we will map the known list.

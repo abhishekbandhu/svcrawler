@@ -19,7 +19,7 @@ export default function Page() {
                         "name": "SVG Crawler",
                         "applicationCategory": "DesignApplication",
                         "operatingSystem": "Web",
-                        "url": "https://svgcrawler.com/",
+                        "url": "https://www.svgcrawler.com/",
                         "offers": {
                             "@type": "Offer",
                             "price": "0.00",

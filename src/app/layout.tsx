@@ -9,11 +9,11 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 export const metadata: Metadata = {
   title: "SVG Crawler & Export Tool",
   description: "Extract, optimize, and organize SVGs from any website.",
-  metadataBase: new URL('https://svgcrawler.com'),
+  metadataBase: new URL('https://www.svgcrawler.com'),
   openGraph: {
     title: 'SVG Crawler & Export Tool',
     description: 'Extract, optimize, and organize SVGs from any website.',
-    url: 'https://svgcrawler.com',
+    url: 'https://www.svgcrawler.com',
     siteName: 'SVG Crawler',
     images: [
       {
@@ -57,7 +57,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "SVG Crawler & Export Tool",
-              "url": "https://svgcrawler.com/",
+              "url": "https://www.svgcrawler.com/",
             }),
           }}
         />
@@ -68,8 +68,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "SVG Crawler",
-              "url": "https://svgcrawler.com/",
-              "logo": "https://svgcrawler.com/logo.png",
+              "url": "https://www.svgcrawler.com/",
+              "logo": "https://www.svgcrawler.com/logo.png",
             }),
           }}
         />

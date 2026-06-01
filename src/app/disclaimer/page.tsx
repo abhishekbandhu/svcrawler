@@ -9,7 +9,7 @@ export default function DisclaimerPage() {
                 <h1 className="text-4xl font-bold mb-8">Disclaimer</h1>
                 <div className="prose prose-lg dark:prose-invert">
                     <p>Last Updated: March 2026</p>
-                    <p>The information and tools provided on SVG Crawler (<a href="https://svgcrawler.com/">https://svgcrawler.com/</a>) are intended for general informational and technical purposes only.</p>
+                    <p>The information and tools provided on SVG Crawler (<a href="https://www.svgcrawler.com/">https://www.svgcrawler.com/</a>) are intended for general informational and technical purposes only.</p>
                     <p>By using this website, you agree to the terms outlined in this disclaimer.</p>
 
                     <h2>1. No Ownership of Extracted SVG Files</h2>
