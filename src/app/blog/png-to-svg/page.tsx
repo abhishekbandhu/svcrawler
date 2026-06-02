@@ -23,6 +23,39 @@ const faqSchema = {
         },
         {
             "@type": "Question",
+            "name": "What is an SVG file?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An SVG (Scalable Vector Graphics) file is a web-friendly vector image format. Unlike pixel-based raster formats like PNG and JPG, an SVG file uses mathematical formulas to draw lines and shapes, allowing it to scale infinitely without losing quality."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What does SVG stand for?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SVG stands for Scalable Vector Graphics. It is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is SVG a vector file?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, SVG is inherently a vector file. It is the most common vector image format used on the web because it is supported by all modern browsers and scales perfectly."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How to open SVG file?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can open an SVG file in any modern web browser (like Chrome, Firefox, or Safari). To edit it, you can use vector graphics software like Adobe Illustrator, Figma, Inkscape, or simply open it in a text editor to modify the raw XML code."
+            }
+        },
+
+        {
+            "@type": "Question",
             "name": "Is it better to trace a PNG or extract the original SVG?",
             "acceptedAnswer": {
                 "@type": "Answer",

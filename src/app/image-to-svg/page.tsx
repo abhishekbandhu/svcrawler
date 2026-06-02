@@ -50,10 +50,10 @@ export default function ImageToSvgPage() {
                             AI-Powered Tracing
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-foreground text-balance">
-                            Convert Image to SVG
+                            PNG to SVG Converter
                         </h1>
                         <p className="text-muted-foreground text-lg md:text-xl text-balance">
-                            Transform your raster images (PNG, JPG) into high-quality, infinitely scalable vector graphics. No server uploads required.
+                            The ultimate free <strong>png to svg converter</strong>. Transform your raster images into high-quality, infinitely scalable vector graphics instantly. Need to convert <strong>jpg to svg</strong>? We handle that too. No server uploads required.
                         </p>
                     </div>
 
@@ -62,7 +62,7 @@ export default function ImageToSvgPage() {
                     {/* SEO Content Section */}
                     <section className="mt-32 max-w-4xl mx-auto border-t border-border pt-16">
                         <h2 className="text-3xl font-bold mb-8 text-center text-foreground">
-                            Why Convert to SVG?
+                            Why Convert PNG to SVG?
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-12 prose prose-lg dark:prose-invert max-w-none">
@@ -74,7 +74,7 @@ export default function ImageToSvgPage() {
 
                                 <h3>Smaller File Sizes</h3>
                                 <p>
-                                    For logos, icons, and simple illustrations, an SVG file is often significantly smaller than its raster counterpart. By converting flatter PNGs to SVGs, you strip away heavy pixel data, leading to faster loading times for your websites and applications.
+                                    For logos, icons, and simple illustrations, an SVG file is often significantly smaller than its raster counterpart. By using our <strong>png to svg converter</strong>, you strip away heavy pixel data, leading to faster loading times for your websites and applications. Convert <strong>jpg to svg</strong> to keep file sizes incredibly lean.
                                 </p>
                             </div>
 
