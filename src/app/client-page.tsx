@@ -129,7 +129,7 @@ export default function Home() {
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-muted flex items-center justify-center overflow-hidden">
-                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}`} alt="User" />
+                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}`} alt={`Profile avatar of SVGCrawler user ${i} leaving a review`} />
                   </div>
                 ))}
               </div>

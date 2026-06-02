@@ -162,7 +162,7 @@ export default function BlogPost() {
                     <div className="rounded-2xl overflow-hidden mb-12 border border-border">
                         <img
                             src="https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=2670&auto=format&fit=crop"
-                            alt="Vector editing on a screen"
+                            alt="Graphic designer converting a pixelated PNG image into a scalable vector graphic (SVG) on a modern laptop screen"
                             className="w-full aspect-video object-cover"
                         />
                     </div>
