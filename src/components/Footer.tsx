@@ -23,28 +23,32 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-semibold mb-4 text-sm">Product</h3>
+                        <h3 className="font-semibold mb-4 text-sm">Tools</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li><Link href="/convert" className="hover:text-foreground transition-colors" title="Convert SVG to PNG">SVG to PNG Converter</Link></li>
-                            <li><Link href="/image-to-svg" className="hover:text-foreground transition-colors" title="Convert PNG to SVG">PNG to SVG Converter</Link></li>
-                            <li><Link href="/favicon-generator" className="hover:text-foreground transition-colors" title="Generate Favicons from Images">Free Favicon Generator</Link></li>
-                            <li><Link href="#features" className="hover:text-foreground transition-colors">Features</Link></li>
+                            <li><Link href="/image-to-svg" className="hover:text-foreground transition-colors" title="Convert PNG to SVG">Image to SVG Converter</Link></li>
+                            <li><Link href="/favicon-generator" className="hover:text-foreground transition-colors" title="Generate Favicons from Images">Favicon Generator</Link></li>
+                            <li><Link href="#extract" className="hover:text-foreground transition-colors">SVG Extractor</Link></li>
+                            <li><Link href="#extract" className="hover:text-foreground transition-colors">SVG Optimizer</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-semibold mb-4 text-sm">Legal</h3>
+                        <h3 className="font-semibold mb-4 text-sm">Resources</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link></li>
-                            <li><Link href="/disclaimer" className="hover:text-foreground transition-colors">Disclaimer</Link></li>
+                            <li><Link href="/blog" className="hover:text-foreground transition-colors">Blog & Guides</Link></li>
+                            <li><Link href="#" className="hover:text-foreground transition-colors">Documentation</Link></li>
+                            <li><Link href="#" className="hover:text-foreground transition-colors">API (Coming Soon)</Link></li>
+                            <li><Link href="#" className="hover:text-foreground transition-colors">Changelog</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-semibold mb-4 text-sm">Company</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link href="/about" className="hover:text-foreground transition-colors">About</Link></li>
-                            <li><Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link></li>
-                            <li><Link href="#" className="hover:text-foreground transition-colors">Careers</Link></li>
+                            <li><Link href="/about" className="hover:text-foreground transition-colors">About Us</Link></li>
+                            <li><Link href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/disclaimer" className="hover:text-foreground transition-colors">Disclaimer</Link></li>
+                            <li><Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
                         </ul>
                     </div>
                 </div>

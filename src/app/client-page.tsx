@@ -8,10 +8,13 @@ import { ExtractedSvg } from "@/types";
 import { FileArchive, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Features } from "@/components/Features";
-import { FAQ } from "@/components/FAQ";
-import { ConverterCTA } from "@/components/ConverterCTA";
-import { ImageToSvgCTA } from "@/components/ImageToSvgCTA";
+import { FeatureCards } from "@/components/home/FeatureCards";
+import { HowItWorks } from "@/components/home/HowItWorks";
+import { Benefits } from "@/components/home/Benefits";
+import { PopularUseCases } from "@/components/home/PopularUseCases";
+import { HomeFAQ } from "@/components/home/HomeFAQ";
+import { RelatedTools } from "@/components/home/RelatedTools";
+import { SeoContent } from "@/components/home/SeoContent";
 
 export default function Home() {
   const [svgs, setSvgs] = useState<ExtractedSvg[]>([]);
@@ -118,22 +121,18 @@ export default function Home() {
             </h1>
 
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-10 text-balance animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
-              The ultimate tool for designers and developers to crawl, extract, optimize, and organize SVG assets from any URL.
+              Paste any public webpage URL to instantly find, preview, and download every SVG used on the page. No browser extensions or coding required.
             </p>
 
             <div className="w-full animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
               <CrawlerForm onCrawl={handleCrawl} isLoading={isLoading} />
             </div>
 
-            <div className="mt-8 flex items-center justify-center gap-4 text-sm text-muted-foreground animate-in fade-in slide-in-from-bottom-12 duration-700 delay-300">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-muted flex items-center justify-center overflow-hidden">
-                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}`} alt={`Profile avatar of SVGCrawler user ${i} leaving a review`} />
-                  </div>
-                ))}
-              </div>
-              <span>Trusted by 10,000+ designers</span>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-muted-foreground animate-in fade-in slide-in-from-bottom-12 duration-700 delay-300">
+              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Works with most public websites</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Extracts inline & linked SVGs</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Download individually or ZIP</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Built for designers & developers</span>
             </div>
           </div>
         </section>
@@ -168,13 +167,13 @@ export default function Home() {
           </section>
         )}
 
-        <Features />
-
-        <ConverterCTA />
-
-        <ImageToSvgCTA />
-
-        <FAQ />
+        <FeatureCards />
+        <HowItWorks />
+        <Benefits />
+        <PopularUseCases />
+        <HomeFAQ />
+        <RelatedTools />
+        <SeoContent />
       </main>
 
       <Footer />
