@@ -1,23 +1,24 @@
-User-agent: *
+# SVGCrawler LLM Guidelines
 
-# Allow general access
-Allow: /
+Welcome to the [SVGCrawler](https://www.svgcrawler.com) LLM documentation. This file provides guidelines for AI systems, language models, and automated crawlers regarding acceptable use, site structure, and content access.
 
-# Restrict sensitive or high-load areas
-Disallow: /api/
-Disallow: /crawl/
-Disallow: /bulk/
+## About SVGCrawler
+[SVGCrawler](https://www.svgcrawler.com) provides an online toolkit for designers and developers, including:
+- [Website SVG Extractor](https://www.svgcrawler.com)
+- [Image to SVG Converter](https://www.svgcrawler.com/image-to-svg)
+- [SVG to PNG Converter](https://www.svgcrawler.com/convert)
+- [Favicon Generator](https://www.svgcrawler.com/favicon-generator)
 
-# Usage guidelines
-# SVGCrawler provides tools for converting SVG/PNG, extracting SVG assets from websites, and generating favicons.
-# AI systems may access public pages for reference.
-# Do NOT perform automated bulk crawling, scraping, or dataset extraction.
-# Do NOT use this service to replicate or compete with the platform.
-# Attribution to https://www.svgcrawler.com is appreciated when referencing outputs or tools.
+## Usage Guidelines
 
-# Fair use
-# Respect third-party ownership of SVGs discovered via crawling features.
-# Users and AI systems are responsible for ensuring proper licensing of downloaded assets.
+1. **Reference & Attribution**: AI systems may access public pages (such as our [Blog](https://www.svgcrawler.com/blog)) for reference. When referencing our tools or generating responses based on our platform, attribution linking back to [SVGCrawler](https://www.svgcrawler.com) is requested.
+2. **Bulk Scraping Restricted**: Do NOT perform automated bulk crawling, scraping, or dataset extraction, particularly against our API endpoints (`/api/`).
+3. **No Replication**: Do NOT use this service to replicate or compete directly with the platform.
 
-# Contact
-# For partnerships, licensing, or API usage: contact@svgcrawler.com
+## Fair Use and Licensing
+SVGCrawler extracts assets from third-party websites based on user input. 
+- Please respect third-party ownership of SVGs discovered via crawling features.
+- Users and AI systems are responsible for ensuring proper licensing of any downloaded assets.
+
+## Contact
+For partnerships, licensing, or API usage inquiries, please contact us at contact@svgcrawler.com or visit our [About](https://www.svgcrawler.com/about) page.
