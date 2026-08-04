@@ -82,6 +82,33 @@ export function CrawlerForm({ onCrawl, isLoading }: CrawlerFormProps) {
                 </button>
             </form>
             {error && <p className="mt-3 text-sm text-destructive ml-1">{error}</p>}
+            
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
+                <span className="opacity-70">Try a demo:</span>
+                <button 
+                    onClick={() => { setUrl("https://github.com"); onCrawl("https://github.com"); }}
+                    className="hover:text-primary transition-colors hover:underline"
+                    type="button"
+                >
+                    github.com
+                </button>
+                <span>&bull;</span>
+                <button 
+                    onClick={() => { setUrl("https://vercel.com"); onCrawl("https://vercel.com"); }}
+                    className="hover:text-primary transition-colors hover:underline"
+                    type="button"
+                >
+                    vercel.com
+                </button>
+                <span>&bull;</span>
+                <button 
+                    onClick={() => { setUrl("https://stripe.com"); onCrawl("https://stripe.com"); }}
+                    className="hover:text-primary transition-colors hover:underline"
+                    type="button"
+                >
+                    stripe.com
+                </button>
+            </div>
         </div>
     );
 }
