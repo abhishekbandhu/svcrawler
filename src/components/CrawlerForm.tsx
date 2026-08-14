@@ -32,10 +32,16 @@ export function CrawlerForm({ onCrawl, isLoading }: CrawlerFormProps) {
         e.preventDefault();
         if (!url) return;
 
+        let formattedUrl = url.trim();
+        if (!formattedUrl.startsWith("http://") && !formattedUrl.startsWith("https://")) {
+            formattedUrl = `https://${formattedUrl}`;
+        }
+
         try {
-            new URL(url);
+            new URL(formattedUrl);
             setError(null);
-            await onCrawl(url);
+            setUrl(formattedUrl); // Update the input field to show the full URL
+            await onCrawl(formattedUrl);
         } catch {
             setError("Please enter a valid URL (e.g., https://example.com)");
         }
