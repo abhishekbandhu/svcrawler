@@ -204,7 +204,7 @@ export function ImageToSvg() {
                             <button
                                 onClick={downloadSvg}
                                 disabled={isConverting || !svgStr}
-                                className="w-full py-4 mt-auto bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-secondary hover:text-secondary-foreground hover:-translate-y-1 active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 disabled:hover:translate-y-0 disabled:hover:bg-primary disabled:hover:text-primary-foreground cursor-pointer ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                                className="w-full py-4 mt-auto bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-primary/90 hover:-translate-y-1 active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 disabled:hover:translate-y-0 disabled:hover:bg-primary cursor-pointer ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                             >
                                 <Download className="w-5 h-5" />
                                 Download SVG

@@ -185,7 +185,7 @@ export function SvgConverter() {
                             <button
                                 onClick={convertAndDownload}
                                 disabled={isConverting}
-                                className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-secondary hover:text-secondary-foreground transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20"
+                                className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20"
                             >
                                 {isConverting ? (
                                     <>

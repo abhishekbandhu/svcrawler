@@ -263,7 +263,7 @@ export function FaviconTool() {
                             <button
                                 onClick={handleGenerate}
                                 disabled={isProcessing}
-                                className="flex-1 py-3 px-4 flex items-center justify-center gap-2 font-medium rounded-xl bg-primary text-primary-foreground shadow-lg hover:bg-secondary hover:text-secondary-foreground transition-all disabled:opacity-75"
+                                className="flex-1 py-3 px-4 flex items-center justify-center gap-2 font-medium rounded-xl bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all disabled:opacity-75"
                             >
                                 {isProcessing ? (
                                     <>
