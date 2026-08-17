@@ -20,7 +20,7 @@ export function ConverterCTA() {
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
                             <Link
                                 href="/convert"
-                                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 w-full sm:w-auto"
+                                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-secondary hover:text-secondary-foreground transition-colors shadow-lg shadow-primary/20 w-full sm:w-auto"
                             >
                                 Try Converter
                                 <ArrowRight className="w-4 h-4 ml-2" />

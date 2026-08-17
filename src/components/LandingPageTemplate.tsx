@@ -41,7 +41,10 @@ export function LandingPageTemplate({
 
                 {/* Instructions */}
                 <section className="container mx-auto px-4 py-20 border-b border-border/40">
-                    <h2 className="text-3xl font-bold mb-8 text-center">How to use this tool</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center">
+                        How to use this tool
+                        <div className="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full opacity-80"></div>
+                    </h2>
                     <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {instructions.map((step, i) => (
                             <div key={i} className="flex gap-4 items-start">
@@ -56,7 +59,10 @@ export function LandingPageTemplate({
 
                 {/* Benefits */}
                 <section className="container mx-auto px-4 py-20 border-b border-border/40 bg-muted/10">
-                    <h2 className="text-3xl font-bold mb-8 text-center">Why choose our tool?</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center">
+                        Why choose our tool?
+                        <div className="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full opacity-80"></div>
+                    </h2>
                     <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                         {benefits.map((benefit, i) => (
                             <div key={i} className="p-6 rounded-2xl bg-card border border-border">
@@ -68,7 +74,10 @@ export function LandingPageTemplate({
 
                 {/* FAQs */}
                 <section className="container mx-auto px-4 py-20 border-b border-border/40">
-                    <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center">
+                        Frequently Asked Questions
+                        <div className="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full opacity-80"></div>
+                    </h2>
                     <div className="max-w-3xl mx-auto space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="p-6 rounded-2xl bg-card border border-border">

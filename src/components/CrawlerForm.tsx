@@ -72,7 +72,7 @@ export function CrawlerForm({ onCrawl, isLoading }: CrawlerFormProps) {
                     disabled={isLoading || !url}
                     className={cn(
                         "px-8 py-4 rounded-2xl bg-primary text-primary-foreground font-bold text-lg shadow-lg",
-                        "hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300",
+                        "hover:bg-secondary hover:text-secondary-foreground hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300",
                         "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg",
                         "flex items-center justify-center gap-2"
                     )}
