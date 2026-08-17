@@ -21,7 +21,7 @@ export default function BlogPost() {
                         "@type": "Article",
                         "headline": "How to Download SVG Icons from Any Website",
                         "description": "Need to download SVG from webpage? Discover the best ways to inspect, copy, and download SVG files from websites using dev tools or an SVG extractor.",
-                        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+                        "image": "https://www.svgcrawler.com/images/download-svg-hero.jpg",
                         "author": {
                             "@type": "Organization",
                             "name": "SVG Crawler"
@@ -78,8 +78,8 @@ export default function BlogPost() {
 
                         <div className="rounded-2xl overflow-hidden mb-12 aspect-[2/1]">
                             <img
-                                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop"
-                                alt="Hacker screen and tools"
+                                src="/images/download-svg-hero.jpg"
+                                alt="Vector illustration of a developer downloading SVG files from a computer screen into a folder"
                                 className="w-full h-full object-cover"
                             />
                         </div>
