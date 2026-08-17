@@ -58,7 +58,7 @@ const posts = [
         excerpt: "Need to download SVG from webpage? Discover the best ways to inspect, copy, and download SVG files from websites using dev tools or an SVG extractor.",
         date: "Mar 11, 2026",
         author: "Content Strategist",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
+        image: "/images/download-svg-hero.jpg",
     },
     {
         slug: "svg-creator-guide",
