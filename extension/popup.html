@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGCrawler</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <h1>SVGCrawler</h1>
+        </div>
+        <button id="downloadAllBtn" class="btn btn-primary" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download ZIP
+        </button>
+    </div>
+
+    <div class="main-content">
+        <div id="loading" class="state-container">
+            <div class="spinner"></div>
+            <p>Extracting SVGs...</p>
+        </div>
+        
+        <div id="empty-state" class="state-container hidden">
+            <p>No SVGs found on this page.</p>
+        </div>
+
+        <div id="svg-grid" class="grid hidden">
+            <!-- SVGs will be injected here -->
+        </div>
+    </div>
+
+    <script src="jszip.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

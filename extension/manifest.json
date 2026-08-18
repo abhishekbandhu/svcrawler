@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "SVGCrawler - Extract & Download SVGs",
+  "version": "1.0.0",
+  "description": "Extract every SVG from any website instantly. Download individual SVGs or package them all into a single ZIP file.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
