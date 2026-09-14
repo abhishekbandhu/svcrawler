@@ -30,11 +30,11 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-foreground animate-in fade-in slide-in-from-bottom-6 duration-700">
-              Extract SVGs from <br className="hidden md:block" /> any website instantly.
+              Extract SVGs From Any Website
             </h1>
 
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-10 text-balance animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
-              Paste any public webpage URL to instantly find, preview, and download every SVG used on the page. No browser extensions or coding required.
+              Find, preview, copy, and download SVG files from any webpage. Paste a URL and extract SVGs instantly.
             </p>
 
             <CrawlerTool />

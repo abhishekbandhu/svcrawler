@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "SVG Crawler & Export Tool",
-  description: "Extract, optimize, and organize SVGs from any website.",
+  title: "SVG Extractor — Extract SVGs From Any Website | SVG Crawler",
+  description: "Find, preview, copy, and download SVG files from any webpage. Paste a URL and extract SVGs instantly.",
   metadataBase: new URL('https://www.svgcrawler.com'),
   openGraph: {
-    title: 'SVG Crawler & Export Tool',
-    description: 'Extract, optimize, and organize SVGs from any website.',
+    title: 'SVG Extractor — Extract SVGs From Any Website | SVG Crawler',
+    description: 'Find, preview, copy, and download SVG files from any webpage. Paste a URL and extract SVGs instantly.',
     url: 'https://www.svgcrawler.com',
     siteName: 'SVG Crawler',
     images: [

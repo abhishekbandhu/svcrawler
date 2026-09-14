@@ -15,6 +15,7 @@ const staticRoutes = [
     '/privacy',
     '/terms',
     '/disclaimer',
+    '/svg-logo-downloader',
     '/blog'
 ];
 
@@ -28,6 +29,7 @@ const blogPosts = [
     'extract-svg-from-website',
     'export-svg-from-website',
     'download-svg-from-website',
+    'how-to-download-svg-from-inspect-element',
     'svg-creator-guide',
     'svg-converter-guide',
     'convert-to-svg-guide',

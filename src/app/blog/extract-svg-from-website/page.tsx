@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-    title: "How to Extract SVG from Any Website | Fast & Easy",
+    title: "How to Extract SVG From a Website | SVG Crawler",
     description: "Learn how to extract SVG from website source code using manual methods or an automated SVG extractor tool. Step-by-step guide for designers & developers.",
     alternates: {
         canonical: "/blog/extract-svg-from-website",
@@ -67,7 +67,7 @@ export default function BlogPost() {
                     <article>
                         <header className="mb-10 text-center">
                             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-                                How to Extract SVG from Any Website (Step-by-Step)
+                                How to Extract SVG From a Website
                             </h1>
                             <div className="flex items-center justify-center gap-4 text-muted-foreground text-sm">
                                 <span>March 11, 2026</span>
@@ -87,9 +87,17 @@ export default function BlogPost() {
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <p>If you are a web developer, UI/UX designer, or frontend engineer, you already know that Scalable Vector Graphics (SVG) are the gold standard for web icons, logos, and illustrations. Because they are resolution-independent and incredibly lightweight, SVGs keep websites fast and looking sharp on any screen.</p>
 
-                            <p>But what happens when you are seeking inspiration, auditing a website's design system, or debugging how a specific graphic was built, and you need to <a href="https://www.svgcrawler.com/">extract SVG from website</a> source code?</p>
+                            <p>But what happens when you are seeking inspiration, auditing a website's design system, or debugging how a specific graphic was built, and you need to <a href="https://www.svgcrawler.com/" className="text-primary hover:underline font-medium">extract SVG from website</a> source code?</p>
 
-                            <p>In this comprehensive guide, we will walk you through exactly what SVG files are, why modern websites rely on them, and the most effective methods to extract them manually or by using an automated <a href="https://www.svgcrawler.com/">SVG extractor tool</a>.</p>
+                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 my-8">
+                                <h3 className="text-xl font-bold mb-2 mt-0">Automate SVG Extraction</h3>
+                                <p className="mb-4">Instead of digging through HTML, use our <a href="https://www.svgcrawler.com/" className="text-primary hover:underline font-medium">SVG extractor</a>. Paste the URL and download all SVGs instantly.</p>
+                                <a href="https://www.svgcrawler.com/" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-primary-foreground hover:bg-primary/90 h-10 py-2 px-4">
+                                    Extract SVGs Now
+                                </a>
+                            </div>
+
+                            <p>In this comprehensive guide, we will walk you through exactly what SVG files are, why modern websites rely on them, and the most effective methods to extract them manually or by using an automated <a href="https://www.svgcrawler.com/" className="text-primary hover:underline font-medium">SVG extractor tool</a>.</p>
 
                             <h2>What Are SVG Files?</h2>
                             <p>SVG stands for Scalable Vector Graphics. Unlike traditional raster images (like JPGs, GIFs, or PNGs) that are built using a fixed grid of colored pixels, SVGs are built using XML-based text code that defines mathematical shapes, paths, lines, and colors.</p>

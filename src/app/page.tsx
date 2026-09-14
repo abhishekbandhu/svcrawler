@@ -44,7 +44,7 @@ export default function Page() {
                 "price": "0.00",
                 "priceCurrency": "USD"
             },
-            "description": "Extract, convert, and optimize SVGs online."
+            "description": "Find, preview, copy, and download SVG files from any webpage. Paste a URL and extract SVGs instantly."
         },
         {
             "@context": "https://schema.org",
