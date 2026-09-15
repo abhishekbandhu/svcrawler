@@ -141,10 +141,14 @@
     <div id="status"></div>
 
     <script>
+        let currentPaymentStatus = 'UNPAID';
+        const FREE_LIMIT = 10;
+
         // Listen for payment status from Figma
         window.onmessage = (event) => {
             const msg = event.data.pluginMessage;
             if (msg.type === 'payment-status') {
+                currentPaymentStatus = msg.status;
                 if (msg.status === 'PAID') {
                     document.getElementById('pro-badge').style.display = 'block';
                     document.getElementById('upgrade-btn').style.display = 'none';
@@ -239,16 +243,26 @@
                     return;
                 }
 
-                statusEl.textContent = `Rendering to canvas...`;
-                statusEl.className = 'success';
+                // Handle Paywall Logic in UI
+                let svgsToExtract = processedSvgs;
+                
+                if (currentPaymentStatus === 'UNPAID' && processedSvgs.length > FREE_LIMIT) {
+                    const missedCount = processedSvgs.length - FREE_LIMIT;
+                    svgsToExtract = processedSvgs.slice(0, FREE_LIMIT);
+                    
+                    statusEl.innerHTML = `Extracted ${FREE_LIMIT} SVGs to canvas.<br/><span style="color: #D97706; font-weight: bold; margin-top: 4px; display: inline-block;">⚠️ You missed ${missedCount} SVGs! Upgrade to Pro to unlock them.</span>`;
+                    statusEl.className = '';
+                } else {
+                    statusEl.textContent = `Successfully rendered ${processedSvgs.length} SVGs to canvas!`;
+                    statusEl.className = 'success';
+                }
 
                 // Send to main thread
-                parent.postMessage({ pluginMessage: { type: 'extract-svgs', svgs: processedSvgs } }, '*');
+                parent.postMessage({ pluginMessage: { type: 'extract-svgs', svgs: svgsToExtract } }, '*');
                 
                 setTimeout(() => {
-                    statusEl.textContent = '';
                     btn.disabled = false;
-                }, 3000);
+                }, 1000);
 
             } catch (err) {
                 console.error(err);

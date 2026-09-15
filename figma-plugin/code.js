@@ -22,14 +22,13 @@ figma.ui.onmessage = async (msg) => {
             return;
         }
 
+        // The UI thread already slices the array based on payment status, 
+        // but we enforce it here as well for security.
         const isUnpaid = figma.payments.status.type === 'UNPAID';
         const FREE_LIMIT = 10;
 
         if (isUnpaid && svgs.length > FREE_LIMIT) {
-            figma.notify(`Free tier limit: Extracted ${FREE_LIMIT} of ${svgs.length} SVGs. Upgrade for unlimited!`);
             svgs = svgs.slice(0, FREE_LIMIT);
-        } else {
-            figma.notify(`Found ${svgs.length} SVGs. Rendering...`);
         }
 
         const nodes = [];
