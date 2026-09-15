@@ -99,13 +99,29 @@ export async function POST(req: Request) {
             ))
         );
 
-        return NextResponse.json({ svgs: uniqueSvgs });
+        return NextResponse.json({ svgs: uniqueSvgs }, {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization",
+            },
+        });
 
     } catch (error) {
         console.error("Crawler Error:", error);
         return NextResponse.json(
             { error: "Internal Server Error" },
-            { status: 500 }
+            { status: 500, headers: { "Access-Control-Allow-Origin": "*" } }
         );
     }
+}
+
+export async function OPTIONS() {
+    return NextResponse.json({}, {
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        },
+    });
 }

@@ -1,0 +1,15 @@
+{
+  "name": "SVGCrawler — Extract SVGs from Any URL",
+  "id": "svgcrawler-plugin-001",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "The plugin needs to communicate with the SVGCrawler API to extract SVGs from external websites."
+  },
+  "editorType": [
+    "figma",
+    "figjam"
+  ]
+}

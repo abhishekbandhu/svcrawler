@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #14B8A6;
+            --bg: #F8FAFC;
+            --text: #0F172A;
+            --border: #E2E8F0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        h2 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        p {
+            margin: 0;
+            font-size: 13px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            border-color: var(--primary);
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        button:disabled {
+            background-color: #94A3B8;
+            cursor: not-allowed;
+        }
+
+        #status {
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 8px;
+            color: #64748B;
+        }
+
+        .error {
+            color: #EF4444 !important;
+        }
+
+        .success {
+            color: #10B981 !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>SVGCrawler</h2>
+    <p>Paste a website URL below to extract all SVGs and drop them directly onto your Figma canvas.</p>
+    
+    <div class="input-group">
+        <input type="url" id="url" placeholder="https://stripe.com" required>
+        <button id="extract">Extract SVGs to Canvas</button>
+    </div>
+
+    <div id="status"></div>
+
+    <script>
+        document.getElementById('extract').onclick = async () => {
+            const urlInput = document.getElementById('url').value;
+            const statusEl = document.getElementById('status');
+            const btn = document.getElementById('extract');
+            
+            if (!urlInput) {
+                statusEl.textContent = 'Please enter a URL.';
+                statusEl.className = 'error';
+                return;
+            }
+
+            try {
+                // Basic URL validation
+                new URL(urlInput);
+            } catch {
+                statusEl.textContent = 'Please enter a valid URL (include https://).';
+                statusEl.className = 'error';
+                return;
+            }
+
+            btn.disabled = true;
+            statusEl.textContent = 'Crawling website for SVGs...';
+            statusEl.className = '';
+
+            try {
+                // Call the SVGCrawler API
+                // Using production URL so this works out of the box.
+                // Replace with http://localhost:3000/api/crawl if testing locally.
+                const apiUrl = 'https://www.svgcrawler.com/api/crawl';
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url: urlInput })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API returned ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                if (!data.svgs || data.svgs.length === 0) {
+                    statusEl.textContent = 'No SVGs found on this website.';
+                    statusEl.className = '';
+                    btn.disabled = false;
+                    return;
+                }
+
+                statusEl.textContent = `Found ${data.svgs.length} graphics. Processing...`;
+
+                // Resolve external SVGs
+                const processedSvgs = [];
+                for (const svg of data.svgs) {
+                    if (svg.type === 'inline' && svg.content) {
+                        processedSvgs.push(svg);
+                    } else if (svg.type === 'external' && svg.url) {
+                        try {
+                            // Attempt to fetch the raw XML of the external SVG
+                            const svgRes = await fetch(svg.url);
+                            if (svgRes.ok) {
+                                const text = await svgRes.text();
+                                if (text.includes('<svg')) {
+                                    processedSvgs.push({
+                                        type: 'inline',
+                                        content: text
+                                    });
+                                }
+                            }
+                        } catch (e) {
+                            console.warn("Could not fetch external SVG due to CORS:", svg.url);
+                        }
+                    }
+                }
+
+                if (processedSvgs.length === 0) {
+                    statusEl.textContent = 'Failed to process any SVGs.';
+                    statusEl.className = 'error';
+                    btn.disabled = false;
+                    return;
+                }
+
+                statusEl.textContent = `Rendering ${processedSvgs.length} SVGs to canvas...`;
+                statusEl.className = 'success';
+
+                // Send to main thread
+                parent.postMessage({ pluginMessage: { type: 'extract-svgs', svgs: processedSvgs } }, '*');
+                
+                setTimeout(() => {
+                    statusEl.textContent = '';
+                    btn.disabled = false;
+                }, 3000);
+
+            } catch (err) {
+                console.error(err);
+                statusEl.textContent = `Error: ${err.message}`;
+                statusEl.className = 'error';
+                btn.disabled = false;
+            }
+        };
+    </script>
+</body>
+</html>
