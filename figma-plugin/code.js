@@ -1,15 +1,36 @@
-figma.showUI(__html__, { width: 400, height: 350 });
+figma.showUI(__html__, { width: 400, height: 420 });
+
+// Send initial payment status to the UI
+figma.ui.postMessage({ type: 'payment-status', status: figma.payments.status.type });
 
 figma.ui.onmessage = async (msg) => {
+    if (msg.type === 'initiate-checkout') {
+        try {
+            await figma.payments.initiateCheckoutAsync();
+            // Send updated status back to UI after checkout closes
+            figma.ui.postMessage({ type: 'payment-status', status: figma.payments.status.type });
+        } catch (err) {
+            console.error("Checkout failed or cancelled", err);
+        }
+    }
+
     if (msg.type === 'extract-svgs') {
-        const { svgs } = msg;
+        let { svgs } = msg;
 
         if (!svgs || svgs.length === 0) {
             figma.notify("No SVGs found on that URL.");
             return;
         }
 
-        figma.notify(`Found ${svgs.length} SVGs. Rendering...`);
+        const isUnpaid = figma.payments.status.type === 'UNPAID';
+        const FREE_LIMIT = 10;
+
+        if (isUnpaid && svgs.length > FREE_LIMIT) {
+            figma.notify(`Free tier limit: Extracted ${FREE_LIMIT} of ${svgs.length} SVGs. Upgrade for unlimited!`);
+            svgs = svgs.slice(0, FREE_LIMIT);
+        } else {
+            figma.notify(`Found ${svgs.length} SVGs. Rendering...`);
+        }
 
         const nodes = [];
         let currentX = 0;
@@ -25,11 +46,6 @@ figma.ui.onmessage = async (msg) => {
                 if (svgData.type === 'inline') {
                     svgString = svgData.content;
                 } else if (svgData.type === 'external' && svgData.url) {
-                    // We must fetch external SVGs via the UI thread, but to keep this simple
-                    // we'll ask the UI thread to resolve it, OR the UI thread can resolve them all first.
-                    // Wait, the API returns URL. The UI thread should fetch the content of external SVGs
-                    // before sending them to the main thread.
-                    // Assuming the UI thread has sent us ONLY raw XML strings in msg.svgs!
                     svgString = svgData.content; 
                 }
 
@@ -60,11 +76,9 @@ figma.ui.onmessage = async (msg) => {
         }
 
         if (nodes.length > 0) {
-            // Group them or just frame them
             const frame = figma.createFrame();
             frame.name = "SVGCrawler Extraction";
             
-            // Adjust frame size to fit all nodes
             let maxX = 0;
             let maxY = 0;
             nodes.forEach(node => {
@@ -75,7 +89,6 @@ figma.ui.onmessage = async (msg) => {
             
             frame.resize(Math.max(100, maxX + spacing), Math.max(100, maxY + spacing));
             
-            // Move frame to viewport center
             frame.x = figma.viewport.center.x - (frame.width / 2);
             frame.y = figma.viewport.center.y - (frame.height / 2);
 
@@ -89,3 +102,5 @@ figma.ui.onmessage = async (msg) => {
         }
     }
 };
+
+

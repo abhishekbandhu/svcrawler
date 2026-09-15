@@ -8,6 +8,7 @@
             --bg: #F8FAFC;
             --text: #0F172A;
             --border: #E2E8F0;
+            --gold: #F59E0B;
         }
 
         body {
@@ -21,11 +22,28 @@
             gap: 16px;
         }
 
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         h2 {
-            margin: 0 0 8px 0;
+            margin: 0;
             font-size: 20px;
             font-weight: 700;
             color: var(--primary);
+        }
+
+        .pro-badge {
+            display: none;
+            background-color: var(--gold);
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 12px;
+            text-transform: uppercase;
         }
 
         p {
@@ -78,6 +96,17 @@
             cursor: not-allowed;
         }
 
+        #upgrade-btn {
+            background-color: #FEF3C7;
+            color: #92400E;
+            border: 1px solid #FDE68A;
+            display: none;
+        }
+
+        #upgrade-btn:hover {
+            background-color: #FDE68A;
+        }
+
         #status {
             font-size: 13px;
             font-weight: 500;
@@ -96,17 +125,42 @@
     </style>
 </head>
 <body>
-    <h2>SVGCrawler</h2>
-    <p>Paste a website URL below to extract all SVGs and drop them directly onto your Figma canvas.</p>
+    <div class="header-row">
+        <h2>SVGCrawler</h2>
+        <span id="pro-badge" class="pro-badge">PRO</span>
+    </div>
+    
+    <p id="description-text">Paste a website URL below to extract up to 10 SVGs. Upgrade to Pro for unlimited extractions.</p>
     
     <div class="input-group">
         <input type="url" id="url" placeholder="https://stripe.com" required>
         <button id="extract">Extract SVGs to Canvas</button>
+        <button id="upgrade-btn">⭐ Upgrade to Pro (Unlimited SVGs)</button>
     </div>
 
     <div id="status"></div>
 
     <script>
+        // Listen for payment status from Figma
+        window.onmessage = (event) => {
+            const msg = event.data.pluginMessage;
+            if (msg.type === 'payment-status') {
+                if (msg.status === 'PAID') {
+                    document.getElementById('pro-badge').style.display = 'block';
+                    document.getElementById('upgrade-btn').style.display = 'none';
+                    document.getElementById('description-text').textContent = 'Paste a website URL below to extract unlimited SVGs and drop them onto your canvas.';
+                } else {
+                    document.getElementById('pro-badge').style.display = 'none';
+                    document.getElementById('upgrade-btn').style.display = 'block';
+                }
+            }
+        };
+
+        // Handle Checkout click
+        document.getElementById('upgrade-btn').onclick = () => {
+            parent.postMessage({ pluginMessage: { type: 'initiate-checkout' } }, '*');
+        };
+
         document.getElementById('extract').onclick = async () => {
             const urlInput = document.getElementById('url').value;
             const statusEl = document.getElementById('status');
@@ -132,9 +186,6 @@
             statusEl.className = '';
 
             try {
-                // Call the SVGCrawler API
-                // Using production URL so this works out of the box.
-                // Replace with http://localhost:3000/api/crawl if testing locally.
                 const apiUrl = 'https://www.svgcrawler.com/api/crawl';
                 
                 const response = await fetch(apiUrl, {
@@ -165,7 +216,6 @@
                         processedSvgs.push(svg);
                     } else if (svg.type === 'external' && svg.url) {
                         try {
-                            // Attempt to fetch the raw XML of the external SVG
                             const svgRes = await fetch(svg.url);
                             if (svgRes.ok) {
                                 const text = await svgRes.text();
@@ -177,7 +227,7 @@
                                 }
                             }
                         } catch (e) {
-                            console.warn("Could not fetch external SVG due to CORS:", svg.url);
+                            console.warn("Could not fetch external SVG:", svg.url);
                         }
                     }
                 }
@@ -189,7 +239,7 @@
                     return;
                 }
 
-                statusEl.textContent = `Rendering ${processedSvgs.length} SVGs to canvas...`;
+                statusEl.textContent = `Rendering to canvas...`;
                 statusEl.className = 'success';
 
                 // Send to main thread
