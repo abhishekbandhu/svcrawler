@@ -11,5 +11,6 @@
   "editorType": [
     "figma",
     "figjam"
-  ]
+  ],
+  "permissions": ["payments"]
 }
