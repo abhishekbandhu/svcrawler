@@ -3,7 +3,7 @@ import Link from "next/link";
 export function SeoContent() {
     return (
         <section className="container mx-auto px-4 py-24 border-b border-border/40">
-            <article className="max-w-4xl mx-auto prose prose-invert prose-lg prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary/80">
+            <article className="max-w-4xl mx-auto prose dark:prose-invert prose-lg prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary/80">
                 <h2>The Definitive Designer SVG Toolkit</h2>
                 <p>
                     In modern web development and digital design, Scalable Vector Graphics (SVGs) are the absolute standard. Unlike raster images (like JPG or PNG) that lose quality when scaled, SVGs rely on mathematical equations to render perfectly at any resolution. Whether you are a frontend developer building a sleek user interface or a product designer crafting a brand identity, working with vectors is inevitable. However, managing, extracting, and converting these assets has historically been a fragmented, frustrating process. 
