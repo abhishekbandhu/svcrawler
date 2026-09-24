@@ -7,7 +7,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 font-bold text-xl">
-                            <div className="relative w-40 h-8 flex items-center">
+                            <div className="relative w-48 h-10 flex items-center">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src="/logo-black.png" alt="SVG Crawler" className="h-full object-contain dark:hidden opacity-80 hover:opacity-100 transition-opacity" />
                                 {/* eslint-disable-next-line @next/next/no-img-element */}

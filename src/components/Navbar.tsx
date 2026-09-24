@@ -18,7 +18,7 @@ export function Navbar() {
         <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border/40">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight" onClick={closeMobileMenu}>
-                    <div className="relative w-40 h-8 flex items-center">
+                    <div className="relative w-48 h-10 flex items-center">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src="/logo-black.png" alt="SVG Crawler" className="h-full object-contain dark:hidden" />
                         {/* eslint-disable-next-line @next/next/no-img-element */}
