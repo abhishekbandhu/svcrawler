@@ -1,4 +1,3 @@
-import { CheckCircle2 } from "lucide-react";
 
 export function Benefits() {
     const benefits = [
@@ -25,7 +24,7 @@ export function Benefits() {
                 {benefits.map((benefit, i) => (
                     <div key={i} className="flex flex-col">
                         <div className="flex items-center gap-3 mb-3">
-                            <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
+                            <span className="text-xl flex-shrink-0">✅</span>
                             <h3 className="font-bold text-lg">{benefit.title}</h3>
                         </div>
                         <p className="text-muted-foreground pl-9">

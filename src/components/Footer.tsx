@@ -7,14 +7,12 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 font-bold text-xl">
-                            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                    <line x1="12" y1="22.08" x2="12" y2="12" />
-                                </svg>
+                            <div className="relative w-40 h-8 flex items-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/logo-black.png" alt="SVG Crawler" className="h-full object-contain dark:hidden opacity-80 hover:opacity-100 transition-opacity" />
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/logo-white.png" alt="SVG Crawler" className="h-full object-contain hidden dark:block opacity-80 hover:opacity-100 transition-opacity" />
                             </div>
-                            <span>SVG Crawler</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
                             Extract, optimize, and organize SVGs from any website instantly.

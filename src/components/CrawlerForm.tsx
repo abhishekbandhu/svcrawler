@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Loader2, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CrawlerFormProps {
@@ -52,7 +51,7 @@ export function CrawlerForm({ onCrawl, isLoading }: CrawlerFormProps) {
             <form onSubmit={handleSubmit} className="relative flex flex-col md:flex-row gap-3">
                 <div className="relative flex-1">
                     <div className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
-                        <Search className="w-5 h-5" />
+                        <span className="text-xl leading-none">🔍</span>
                     </div>
                     <input
                         type="text"
@@ -79,7 +78,7 @@ export function CrawlerForm({ onCrawl, isLoading }: CrawlerFormProps) {
                 >
                     {isLoading ? (
                         <>
-                            <Loader2 className="w-5 h-5 animate-spin" />
+                            <span className="animate-spin text-xl leading-none">⏳</span>
                             Extracting...
                         </>
                     ) : (

@@ -1,4 +1,3 @@
-import { Link, Scan, Download } from "lucide-react";
 
 export function HowItWorks() {
     return (
@@ -15,7 +14,7 @@ export function HowItWorks() {
                 
                 <div className="relative text-center z-10 flex flex-col items-center">
                     <div className="w-24 h-24 rounded-full bg-background border-4 border-muted flex items-center justify-center mb-6 shadow-sm">
-                        <Link className="w-10 h-10 text-primary" />
+                        <span className="text-4xl leading-none">🔗</span>
                     </div>
                     <div className="bg-primary text-primary-foreground text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-1/4 -mt-2 -mr-2 shadow-lg">1</div>
                     <h3 className="text-2xl font-bold mb-4">Paste URL</h3>
@@ -26,7 +25,7 @@ export function HowItWorks() {
 
                 <div className="relative text-center z-10 flex flex-col items-center">
                     <div className="w-24 h-24 rounded-full bg-background border-4 border-muted flex items-center justify-center mb-6 shadow-sm">
-                        <Scan className="w-10 h-10 text-primary" />
+                        <span className="text-4xl leading-none">👀</span>
                     </div>
                     <div className="bg-primary text-primary-foreground text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-1/4 -mt-2 -mr-2 shadow-lg">2</div>
                     <h3 className="text-2xl font-bold mb-4">Scan the Page</h3>
@@ -37,7 +36,7 @@ export function HowItWorks() {
 
                 <div className="relative text-center z-10 flex flex-col items-center">
                     <div className="w-24 h-24 rounded-full bg-background border-4 border-muted flex items-center justify-center mb-6 shadow-sm">
-                        <Download className="w-10 h-10 text-primary" />
+                        <span className="text-4xl leading-none">⬇️</span>
                     </div>
                     <div className="bg-primary text-primary-foreground text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-1/4 -mt-2 -mr-2 shadow-lg">3</div>
                     <h3 className="text-2xl font-bold mb-4">Download SVGs</h3>

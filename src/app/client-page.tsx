@@ -1,6 +1,5 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FeatureCards } from "@/components/home/FeatureCards";
@@ -25,7 +24,7 @@ export default function Home() {
 
           <div className="container mx-auto px-4 flex flex-col items-center text-center">
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <Sparkles className="w-3.5 h-3.5 mr-2" />
+              <span className="mr-2 text-base">✨</span>
               <span>New: SVGO Optimization</span>
             </div>
 
@@ -40,10 +39,10 @@ export default function Home() {
             <CrawlerTool />
 
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-muted-foreground animate-in fade-in slide-in-from-bottom-12 duration-700 delay-300">
-              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Works with most public websites</span>
-              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Extracts inline & linked SVGs</span>
-              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Download individually or ZIP</span>
-              <span className="flex items-center justify-center gap-2"><span className="text-primary font-bold">✓</span> Built for designers & developers</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-lg">✅</span> Works with most public websites</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-lg">✅</span> Extracts inline & linked SVGs</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-lg">✅</span> Download individually or ZIP</span>
+              <span className="flex items-center justify-center gap-2"><span className="text-lg">✅</span> Built for designers & developers</span>
             </div>
           </div>
         </section>
