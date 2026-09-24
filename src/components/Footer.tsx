@@ -52,8 +52,11 @@ export function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
+                <div className="mt-12 pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
                     <p>&copy; {new Date().getFullYear()} SVG Crawler. All rights reserved.</p>
+                    <a href="https://buymeacoffee.com/alphaknight21" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors font-medium bg-amber-100 dark:bg-amber-900/30 text-amber-900 dark:text-amber-200 px-3 py-1.5 rounded-full text-sm">
+                        <span>☕</span> Buy me a Coffee
+                    </a>
                 </div>
             </div>
         </footer>

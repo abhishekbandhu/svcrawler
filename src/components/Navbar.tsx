@@ -44,6 +44,9 @@ export function Navbar() {
                     <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
                     <Link href="/#features" className="hover:text-foreground transition-colors">Features</Link>
                     <Link href="/#faq" className="hover:text-foreground transition-colors">FAQ</Link>
+                    <a href="https://buymeacoffee.com/alphaknight21" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors font-medium bg-amber-100 dark:bg-amber-900/30 text-amber-900 dark:text-amber-200 px-3 py-1.5 rounded-full text-sm">
+                        <span>☕</span> Buy me a Coffee
+                    </a>
                     <div className="pl-4 border-l border-border/50">
                         <ThemeToggle />
                     </div>
@@ -72,6 +75,9 @@ export function Navbar() {
                         <Link href="/blog" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">Blog</Link>
                         <Link href="/#features" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">Features</Link>
                         <Link href="/#faq" onClick={closeMobileMenu} className="hover:text-foreground transition-colors py-2">FAQ</Link>
+                        <a href="https://buymeacoffee.com/alphaknight21" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors font-medium bg-amber-100 dark:bg-amber-900/30 text-amber-900 dark:text-amber-200 px-4 py-2 rounded-lg text-base w-fit">
+                            <span>☕</span> Buy me a Coffee
+                        </a>
                     </nav>
                 </div>
             )}
